@@ -1,0 +1,12 @@
+# Processed dataset too large for GitHub
+data/processed/taxi_analysis_2024_final.csv
+
+# Temporary/cache files
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Power BI temporary/cache files
+*.tmp
+*.bak
