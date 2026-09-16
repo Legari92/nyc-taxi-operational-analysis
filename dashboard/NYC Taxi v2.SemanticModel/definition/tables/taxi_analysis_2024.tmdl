@@ -1,0 +1,572 @@
+table taxi_analysis_2024
+	lineageTag: ea4e2654-f73f-4489-a608-607253f7351b
+
+	column pickup_hour
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: 213c9ff7-bbac-4817-aff0-b0bf3eefc448
+		summarizeBy: none
+		sourceColumn: pickup_hour
+
+		variation Variation
+			isDefault
+			relationship: d39f6201-963b-4cb6-a393-dd28996dfd30
+			defaultHierarchy: LocalDateTable_2d90c325-049f-4167-b7b9-098a2cdf58cb.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column PULocationID
+		dataType: int64
+		formatString: #,0
+		lineageTag: 4619de1a-6a40-4efe-b10a-cabde8c00adc
+		summarizeBy: none
+		sourceColumn: PULocationID
+
+		annotation SummarizationSetBy = Automatic
+
+	column trip_count
+		dataType: int64
+		formatString: #,0
+		lineageTag: 3be7db02-8be0-4219-a549-4c68b6abdc67
+		summarizeBy: sum
+		sourceColumn: trip_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_revenue
+		dataType: double
+		lineageTag: 95de3126-34a9-4835-8ebb-f8b4f0e8beec
+		summarizeBy: sum
+		sourceColumn: total_revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column avg_total_amount
+		dataType: double
+		isHidden
+		lineageTag: 73fda0a4-53ea-4db9-967e-7dfa860f1509
+		summarizeBy: none
+		sourceColumn: avg_total_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column avg_fare_amount
+		dataType: double
+		isHidden
+		lineageTag: 788b7405-56ac-4745-b06d-c59349a0846c
+		summarizeBy: none
+		sourceColumn: avg_fare_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column avg_tip_amount
+		dataType: double
+		isHidden
+		lineageTag: 7d9ac609-4e67-49b7-8101-9235c78a1cde
+		summarizeBy: none
+		sourceColumn: avg_tip_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column tip_rate
+		dataType: double
+		isHidden
+		lineageTag: faa5b0ac-518e-410b-afcc-5b70192a0920
+		summarizeBy: none
+		sourceColumn: tip_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column avg_trip_distance
+		dataType: double
+		isHidden
+		lineageTag: c929c863-9688-401e-9445-a788da477386
+		summarizeBy: none
+		sourceColumn: avg_trip_distance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column avg_trip_duration_min
+		dataType: double
+		isHidden
+		lineageTag: 4783ed39-339f-4958-96bf-3874e2a2d5d8
+		summarizeBy: none
+		sourceColumn: avg_trip_duration_min
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column airport_trip_share
+		dataType: int64
+		formatString: #,0
+		lineageTag: 60b52752-8bb7-48b2-9239-25896a59cd7c
+		summarizeBy: none
+		sourceColumn: airport_trip_share
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cash_trip_share
+		dataType: double
+		isHidden
+		lineageTag: 3281c7b2-fd4d-4daf-846f-3488cb3992be
+		summarizeBy: none
+		sourceColumn: cash_trip_share
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column card_trip_share
+		dataType: double
+		isHidden
+		lineageTag: 2d76f43c-4fa5-422d-a0da-036ec1766afb
+		summarizeBy: none
+		sourceColumn: card_trip_share
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column flex_fare_share
+		dataType: double
+		isHidden
+		lineageTag: 10407624-a5b5-4820-891d-31243b9660ec
+		summarizeBy: none
+		sourceColumn: flex_fare_share
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pickup_month
+		dataType: int64
+		isHidden
+		formatString: #,0
+		lineageTag: e675c17e-af27-48da-9bfd-60a8149a0363
+		summarizeBy: none
+		sourceColumn: pickup_month
+
+		annotation SummarizationSetBy = User
+
+	column pickup_dayofweek
+		dataType: int64
+		isHidden
+		formatString: #,0
+		lineageTag: f1f26bd1-360f-4658-8ee4-8cc04e7709a6
+		summarizeBy: none
+		sourceColumn: pickup_dayofweek
+
+		annotation SummarizationSetBy = Automatic
+
+	column pickup_hour_num
+		dataType: int64
+		isHidden
+		formatString: #,0
+		lineageTag: ac2a8506-3c05-49d9-a583-74171dbdb9a3
+		summarizeBy: none
+		sourceColumn: pickup_hour_num
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_weekend
+		dataType: int64
+		isHidden
+		formatString: #,0
+		lineageTag: db44f74a-cfb8-4032-aa47-7d076f76fe1d
+		summarizeBy: none
+		sourceColumn: is_weekend
+
+		annotation SummarizationSetBy = Automatic
+
+	column temp_c
+		dataType: double
+		isHidden
+		lineageTag: 7db67acb-0ccf-4449-b191-08cd73107ea4
+		summarizeBy: none
+		sourceColumn: temp_c
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column rain_mm
+		dataType: double
+		isHidden
+		lineageTag: 4f091520-a0d7-4607-a4ff-133398b9de1e
+		summarizeBy: none
+		sourceColumn: rain_mm
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column rain_flag
+		dataType: int64
+		isHidden
+		formatString: #,0
+		lineageTag: 8dc49530-7200-4fb7-9c8d-455424bd0673
+		summarizeBy: none
+		sourceColumn: rain_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column moderate_rain_flag
+		dataType: int64
+		isHidden
+		formatString: #,0
+		lineageTag: 5c447fa6-307b-497a-acf9-36d90e0fa4a2
+		summarizeBy: none
+		sourceColumn: moderate_rain_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column heavy_rain_flag
+		dataType: int64
+		isHidden
+		formatString: #,0
+		lineageTag: 67b0b631-b8dc-4515-8205-7220f822daa4
+		summarizeBy: none
+		sourceColumn: heavy_rain_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column visibility
+		dataType: double
+		isHidden
+		lineageTag: 3f9e2e9c-de94-42b0-9751-2cc1ac4328f3
+		summarizeBy: none
+		sourceColumn: visibility
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column wind_speed
+		dataType: double
+		isHidden
+		lineageTag: 643c3dcb-24b3-475e-81a4-efa002eea415
+		summarizeBy: none
+		sourceColumn: wind_speed
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column is_dark
+		dataType: int64
+		isHidden
+		formatString: #,0
+		lineageTag: 02bbe363-2bf7-4190-b1a1-433b20bc78c1
+		summarizeBy: none
+		sourceColumn: is_dark
+
+		annotation SummarizationSetBy = Automatic
+
+	column pickup_borough
+		dataType: string
+		lineageTag: c8463c19-fddc-4799-a5a2-b0f31eafa3c2
+		summarizeBy: none
+		sourceColumn: pickup_borough
+
+		annotation SummarizationSetBy = Automatic
+
+	column pickup_zone
+		dataType: string
+		lineageTag: 1cb470d4-bedd-4960-af8a-294203804558
+		summarizeBy: none
+		sourceColumn: pickup_zone
+
+		annotation SummarizationSetBy = Automatic
+
+	column pickup_service_zone
+		dataType: string
+		lineageTag: 50913fde-c873-4c73-bcc4-4964071fa7e0
+		summarizeBy: none
+		sourceColumn: pickup_service_zone
+
+		annotation SummarizationSetBy = Automatic
+
+	column pickup_weekday_name
+		dataType: string
+		isHidden
+		lineageTag: ee57dfe4-cf25-4473-ba64-be6b1ec5e795
+		summarizeBy: none
+		sourceColumn: pickup_weekday_name
+		sortByColumn: pickup_dayofweek
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column hour_segment
+		dataType: string
+		isHidden
+		lineageTag: 3e7198c1-09a0-4cde-bbef-868962c07016
+		summarizeBy: none
+		sourceColumn: hour_segment
+
+		annotation SummarizationSetBy = Automatic
+
+	column pickup_borough_clean
+		dataType: string
+		lineageTag: 6b77d0c0-2920-453c-bf08-0f1219164299
+		summarizeBy: none
+		sourceColumn: pickup_borough_clean
+
+		annotation SummarizationSetBy = Automatic
+
+	column pickup_borough_grouped
+		dataType: string
+		lineageTag: b12f7cd6-08a4-45db-bbac-92ef4bf4a71e
+		summarizeBy: none
+		sourceColumn: pickup_borough_grouped
+
+		annotation SummarizationSetBy = Automatic
+
+	column low_visibility_flag
+		dataType: int64
+		isHidden
+		formatString: #,0
+		lineageTag: 94f04d87-ee7c-4580-81ee-e0d0678b0d1e
+		summarizeBy: none
+		sourceColumn: low_visibility_flag
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column temp_bin
+		dataType: string
+		isHidden
+		lineageTag: a984eee1-96a9-4aad-ae5c-a533b52f67f3
+		summarizeBy: none
+		sourceColumn: temp_bin
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Segmento aeroportuario' = IF('taxi_analysis_2024'[airport_trip_share] = 1, "Positive recorded fee", "No positive recorded fee")
+		dataType: string
+		lineageTag: 235056f7-a059-4784-a184-beaa77bdbce4
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Franja horaria' = 'taxi_analysis_2024'[hour_segment]
+		dataType: string
+		isHidden
+		lineageTag: b1a29ca0-b2f2-4b3a-9794-5c9ec01216e8
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_fare_amount
+		dataType: double
+		lineageTag: c46d73a3-91ec-4864-9b09-b5990bba16f8
+		summarizeBy: sum
+		sourceColumn: total_fare_amount
+
+	column total_tip_amount
+		dataType: double
+		lineageTag: 64503b37-bcd2-45e6-8a25-791ad47e1b72
+		summarizeBy: sum
+		sourceColumn: total_tip_amount
+
+	column total_trip_distance
+		dataType: double
+		lineageTag: 69d04094-8550-4e91-b78f-03bc0fcc6e84
+		summarizeBy: sum
+		sourceColumn: total_trip_distance
+
+	column total_trip_duration_min
+		dataType: double
+		lineageTag: 3ae1978b-5933-4d3f-bb23-18d224fc7f84
+		summarizeBy: sum
+		sourceColumn: total_trip_duration_min
+
+	column tipped_trip_count
+		dataType: int64
+		formatString: #,0
+		lineageTag: 1a16f9d5-1216-4f43-be05-8436a7439070
+		summarizeBy: sum
+		sourceColumn: tipped_trip_count
+
+	column card_trip_count
+		dataType: int64
+		formatString: #,0
+		lineageTag: 1b1d50d7-b127-445f-8a17-eea6d1bd4af2
+		summarizeBy: sum
+		sourceColumn: card_trip_count
+
+	column cash_trip_count
+		dataType: int64
+		formatString: #,0
+		lineageTag: 6c01b802-bc8a-4275-ac8b-222e9e6c4907
+		summarizeBy: sum
+		sourceColumn: cash_trip_count
+
+	column flex_fare_trip_count
+		dataType: int64
+		formatString: #,0
+		lineageTag: 6c0fdd6b-bf4b-4178-a571-7a99cca17928
+		summarizeBy: sum
+		sourceColumn: flex_fare_trip_count
+
+	column airport_fee_missing_count
+		dataType: int64
+		formatString: #,0
+		lineageTag: e4d1d364-ccc0-4056-b2ba-ec5ed9514c81
+		summarizeBy: sum
+		sourceColumn: airport_fee_missing_count
+
+	column tip_missing_count
+		dataType: int64
+		formatString: #,0
+		lineageTag: 20414984-b737-43ab-b6a8-7036d8f12092
+		summarizeBy: sum
+		sourceColumn: tip_missing_count
+
+	column airport_pickup
+		dataType: int64
+		formatString: #,0
+		lineageTag: e186c091-5d2e-4869-a02c-9a3fb28f8751
+		summarizeBy: none
+		sourceColumn: airport_pickup
+
+	column elapsed_hours
+		dataType: int64
+		isHidden
+		formatString: #,0
+		lineageTag: 5e834c21-57fe-40dd-880c-60bf3ed024b5
+		summarizeBy: none
+		sourceColumn: elapsed_hours
+
+	column dst_ambiguous
+		dataType: int64
+		isHidden
+		formatString: #,0
+		lineageTag: 3cfffae7-6aac-412a-a123-f2d6dd6dfb67
+		summarizeBy: none
+		sourceColumn: dst_ambiguous
+
+	column hour_segment_order
+		dataType: int64
+		isHidden
+		formatString: #,0
+		lineageTag: 28055e45-09c8-412c-91a1-58688ec48691
+		summarizeBy: none
+		sourceColumn: hour_segment_order
+
+	column trace_precipitation
+		dataType: double
+		isHidden
+		lineageTag: 4e1cfa44-3f8d-456c-b88a-6ca8ac4ed18f
+		summarizeBy: none
+		sourceColumn: trace_precipitation
+
+	column precipitation_known
+		dataType: int64
+		isHidden
+		formatString: #,0
+		lineageTag: 9f9fe7a6-590a-468a-90b4-2366f2a74223
+		summarizeBy: none
+		sourceColumn: precipitation_known
+
+	column precipitation_category
+		dataType: string
+		isHidden
+		lineageTag: 316858ab-128d-4fe3-9620-06d65864f95f
+		summarizeBy: none
+		sourceColumn: precipitation_category
+
+	column 'Tipo de recogida' = IF('taxi_analysis_2024'[airport_pickup] = 1, "Airport-zone pickup", "Outside airport zone")
+		dataType: string
+		lineageTag: 9b2b8e46-753f-453a-9e59-7cc7808ef7a6
+		summarizeBy: none
+
+	partition taxi_analysis_2024 = m
+		mode: import
+		source = ```
+				// Query name: taxi_analysis_2024. ProjectRoot is a text parameter containing the extracted folder path.
+				let
+				    Source = Csv.Document(File.Contents(ProjectRoot & "/data/processed/taxi_analysis_2024_final.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    EmptyToNull = Table.TransformColumns(Headers, {{"PULocationID", each if _ = "" then null else _, type nullable text},{"airport_trip_share", each if _ = "" then null else _, type nullable text},{"trip_count", each if _ = "" then null else _, type nullable text},{"total_revenue", each if _ = "" then null else _, type nullable text},{"total_fare_amount", each if _ = "" then null else _, type nullable text},{"total_tip_amount", each if _ = "" then null else _, type nullable text},{"total_trip_distance", each if _ = "" then null else _, type nullable text},{"total_trip_duration_min", each if _ = "" then null else _, type nullable text},{"tipped_trip_count", each if _ = "" then null else _, type nullable text},{"card_trip_count", each if _ = "" then null else _, type nullable text},{"cash_trip_count", each if _ = "" then null else _, type nullable text},{"flex_fare_trip_count", each if _ = "" then null else _, type nullable text},{"airport_fee_missing_count", each if _ = "" then null else _, type nullable text},{"tip_missing_count", each if _ = "" then null else _, type nullable text},{"airport_pickup", each if _ = "" then null else _, type nullable text},{"elapsed_hours", each if _ = "" then null else _, type nullable text},{"dst_ambiguous", each if _ = "" then null else _, type nullable text},{"pickup_month", each if _ = "" then null else _, type nullable text},{"pickup_dayofweek", each if _ = "" then null else _, type nullable text},{"pickup_hour_num", each if _ = "" then null else _, type nullable text},{"is_weekend", each if _ = "" then null else _, type nullable text},{"hour_segment_order", each if _ = "" then null else _, type nullable text},{"rain_mm", each if _ = "" then null else _, type nullable text},{"trace_precipitation", each if _ = "" then null else _, type nullable text},{"precipitation_known", each if _ = "" then null else _, type nullable text},{"temp_c", each if _ = "" then null else _, type nullable text},{"visibility", each if _ = "" then null else _, type nullable text},{"wind_speed", each if _ = "" then null else _, type nullable text},{"rain_flag", each if _ = "" then null else _, type nullable text},{"moderate_rain_flag", each if _ = "" then null else _, type nullable text},{"heavy_rain_flag", each if _ = "" then null else _, type nullable text},{"low_visibility_flag", each if _ = "" then null else _, type nullable text},{"is_dark", each if _ = "" then null else _, type nullable text},{"avg_total_amount", each if _ = "" then null else _, type nullable text},{"avg_fare_amount", each if _ = "" then null else _, type nullable text},{"avg_tip_amount", each if _ = "" then null else _, type nullable text},{"avg_trip_distance", each if _ = "" then null else _, type nullable text},{"avg_trip_duration_min", each if _ = "" then null else _, type nullable text},{"tip_rate", each if _ = "" then null else _, type nullable text},{"cash_trip_share", each if _ = "" then null else _, type nullable text},{"card_trip_share", each if _ = "" then null else _, type nullable text},{"flex_fare_share", each if _ = "" then null else _, type nullable text}}),
+				    Typed = Table.TransformColumnTypes(EmptyToNull, {{"pickup_hour", type datetime},
+				        {"PULocationID", Int64.Type},
+				        {"airport_trip_share", Int64.Type},
+				        {"trip_count", Int64.Type},
+				        {"total_revenue", type number},
+				        {"total_fare_amount", type number},
+				        {"total_tip_amount", type number},
+				        {"total_trip_distance", type number},
+				        {"total_trip_duration_min", type number},
+				        {"tipped_trip_count", Int64.Type},
+				        {"card_trip_count", Int64.Type},
+				        {"cash_trip_count", Int64.Type},
+				        {"flex_fare_trip_count", Int64.Type},
+				        {"airport_fee_missing_count", Int64.Type},
+				        {"tip_missing_count", Int64.Type},
+				        {"pickup_borough", type text},
+				        {"pickup_zone", type text},
+				        {"pickup_service_zone", type text},
+				        {"pickup_borough_clean", type text},
+				        {"pickup_borough_grouped", type text},
+				        {"airport_pickup", Int64.Type},
+				        {"elapsed_hours", Int64.Type},
+				        {"dst_ambiguous", Int64.Type},
+				        {"pickup_month", Int64.Type},
+				        {"pickup_dayofweek", Int64.Type},
+				        {"pickup_hour_num", Int64.Type},
+				        {"is_weekend", Int64.Type},
+				        {"pickup_weekday_name", type text},
+				        {"hour_segment_order", Int64.Type},
+				        {"hour_segment", type text},
+				        {"rain_mm", type number},
+				        {"trace_precipitation", type number},
+				        {"precipitation_known", Int64.Type},
+				        {"temp_c", type number},
+				        {"visibility", type number},
+				        {"wind_speed", type number},
+				        {"precipitation_category", type text},
+				        {"rain_flag", Int64.Type},
+				        {"moderate_rain_flag", Int64.Type},
+				        {"heavy_rain_flag", Int64.Type},
+				        {"low_visibility_flag", Int64.Type},
+				        {"temp_bin", type text},
+				        {"is_dark", Int64.Type},
+				        {"avg_total_amount", type number},
+				        {"avg_fare_amount", type number},
+				        {"avg_tip_amount", type number},
+				        {"avg_trip_distance", type number},
+				        {"avg_trip_duration_min", type number},
+				        {"tip_rate", type number},
+				        {"cash_trip_share", type number},
+				        {"card_trip_share", type number},
+				        {"flex_fare_share", type number}}, "en-US")
+				in
+				    Typed
+				
+				```
+
+	changedProperty = Name
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

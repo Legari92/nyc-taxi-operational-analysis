@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "language": "English",
+  "exported_at_local": "2026-09-16T12:17:56+02:00",
+  "source_pdf": "Genuine Power BI Desktop PDF export, NYC Taxi v2.pdf; copied without modification",
+  "pdf": "dashboard/NYC Taxi v2.pdf",
+  "pdf_sha256": "1aa7772abce438ad4550f702c6b8a107b1a6b454396b28576d1b10711f8a9485",
+  "page_count": 4,
+  "visual_review": {
+    "Overview": "Passed: annual cards, all twelve monthly points and pickup-group bars visible; 39,677,878 trips; English labels fit.",
+    "Temporal patterns": "Passed: Monday-Sunday and all 24 hour columns visible; both monthly series, hourly profile and annual-reference note fit.",
+    "Geographic analysis": "Passed: airport-composition comparison and both ten-zone rankings populated; full Penn Station/Madison Sq West label and narrative fit.",
+    "Operational segments": "Passed: fee comparison, pickup-by-fee matrix and both light-condition charts populated; English categories and notes fit."
+  },
+  "review_method": "All four unedited PNG renders visually inspected at 1968 pixels wide; extracted text checked for expected labels and missing-data warnings.",
+  "rendering_result": "No missing-data banners, empty charts, clipped text or overlapping labels observed.",
+  "number_format": "Export retains Desktop regional number formatting: decimal comma and period thousands separator; narrative text uses English number notation.",
+  "desktop_interaction_check": "Overview Queens/August filter verified from owner screenshot; reset to annual total confirmed by owner; chart selections and geographic interactions not manually checked",
+  "final_screenshots": [
+    "images/dashboard/01_overview.png",
+    "images/dashboard/02_temporal_patterns.png",
+    "images/dashboard/03_geographic_analysis.png",
+    "images/dashboard/04_operational_segments.png"
+  ],
+  "screenshot_provenance": "Unedited PNG renders of this genuine Desktop export.",
+  "interaction_evidence": "data/processed/powerbi_interaction_validation.json"
+}

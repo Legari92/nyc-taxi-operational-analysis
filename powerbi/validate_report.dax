@@ -1,0 +1,258 @@
+// Run in Power BI DAX query view after applying the revised model.
+// Read-only: one result row per acceptance scenario. Every Pass value must be TRUE.
+// Each scenario starts without report visual filters and applies its own selections.
+EVALUATE
+VAR Results =
+    UNION(
+    ROW(
+            "Scenario", "All 2024",
+            "Trips", [Trayectos totales],
+            "Expected Trips", 39677878,
+            "Recorded total USD", [Ingresos totales],
+            "Expected Recorded total USD", 1135817146.18,
+            "Period hours", [Horas del periodo],
+            "Expected Period hours", 8784,
+            "Trips per hour", [Trayectos medios por hora],
+            "Expected Trips per hour", 4517.062613843352,
+            "Average total USD", [Importe medio por trayecto],
+            "Expected Average total USD", 28.625954900612378,
+            "Airport fee trips", [Trayectos con recargo registrado],
+            "Expected Airport fee trips", 3163100,
+            "Airport pickups", [Recogidas en aeropuertos],
+            "Expected Airport pickups", 3130315
+        ),
+    CALCULATETABLE(
+        ROW(
+            "Scenario", "January",
+            "Trips", [Trayectos totales],
+            "Expected Trips", 2867575,
+            "Recorded total USD", [Ingresos totales],
+            "Expected Recorded total USD", 78378845.58,
+            "Period hours", [Horas del periodo],
+            "Expected Period hours", 744,
+            "Trips per hour", [Trayectos medios por hora],
+            "Expected Trips per hour", 3854.2674731182797,
+            "Average total USD", [Importe medio por trayecto],
+            "Expected Average total USD", 27.332797077670158,
+            "Airport fee trips", [Trayectos con recargo registrado],
+            "Expected Airport fee trips", 229297,
+            "Airport pickups", [Recogidas en aeropuertos],
+            "Expected Airport pickups", 225925
+        ),
+        TREATAS({1}, 'DimHora'[pickup_month])
+    ),
+    CALCULATETABLE(
+        ROW(
+            "Scenario", "August",
+            "Trips", [Trayectos totales],
+            "Expected Trips", 2865066,
+            "Recorded total USD", [Ingresos totales],
+            "Expected Recorded total USD", 83672508.22,
+            "Period hours", [Horas del periodo],
+            "Expected Period hours", 744,
+            "Trips per hour", [Trayectos medios por hora],
+            "Expected Trips per hour", 3850.8951612903224,
+            "Average total USD", [Importe medio por trayecto],
+            "Expected Average total USD", 29.204391179819243,
+            "Airport fee trips", [Trayectos con recargo registrado],
+            "Expected Airport fee trips", 273313,
+            "Airport pickups", [Recogidas en aeropuertos],
+            "Expected Airport pickups", 270660
+        ),
+        TREATAS({8}, 'DimHora'[pickup_month])
+    ),
+    CALCULATETABLE(
+        ROW(
+            "Scenario", "Queens",
+            "Trips", [Trayectos totales],
+            "Expected Trips", 3644095,
+            "Recorded total USD", [Ingresos totales],
+            "Expected Recorded total USD", 266588820.43,
+            "Period hours", [Horas del periodo],
+            "Expected Period hours", 8784,
+            "Trips per hour", [Trayectos medios por hora],
+            "Expected Trips per hour", 414.8559881602914,
+            "Average total USD", [Importe medio por trayecto],
+            "Expected Average total USD", 73.15638599707198,
+            "Airport fee trips", [Trayectos con recargo registrado],
+            "Expected Airport fee trips", 3157611,
+            "Airport pickups", [Recogidas en aeropuertos],
+            "Expected Airport pickups", 3129077
+        ),
+        TREATAS({"Queens"}, 'taxi_analysis_2024'[pickup_borough_grouped])
+    ),
+    CALCULATETABLE(
+        ROW(
+            "Scenario", "Queens August",
+            "Trips", [Trayectos totales],
+            "Expected Trips", 314917,
+            "Recorded total USD", [Ingresos totales],
+            "Expected Recorded total USD", 22817261.38,
+            "Period hours", [Horas del periodo],
+            "Expected Period hours", 744,
+            "Trips per hour", [Trayectos medios por hora],
+            "Expected Trips per hour", 423.2755376344086,
+            "Average total USD", [Importe medio por trayecto],
+            "Expected Average total USD", 72.45484168844487,
+            "Airport fee trips", [Trayectos con recargo registrado],
+            "Expected Airport fee trips", 272855,
+            "Airport pickups", [Recogidas en aeropuertos],
+            "Expected Airport pickups", 270527
+        ),
+        TREATAS({8}, 'DimHora'[pickup_month]),
+        TREATAS({"Queens"}, 'taxi_analysis_2024'[pickup_borough_grouped])
+    ),
+    CALCULATETABLE(
+        ROW(
+            "Scenario", "Positive airport fee",
+            "Trips", [Trayectos totales],
+            "Expected Trips", 3163100,
+            "Recorded total USD", [Ingresos totales],
+            "Expected Recorded total USD", 241694649.8,
+            "Period hours", [Horas del periodo],
+            "Expected Period hours", 8784,
+            "Trips per hour", [Trayectos medios por hora],
+            "Expected Trips per hour", 360.0979052823315,
+            "Average total USD", [Importe medio por trayecto],
+            "Expected Average total USD", 76.41068881793177,
+            "Airport fee trips", [Trayectos con recargo registrado],
+            "Expected Airport fee trips", 3163100,
+            "Airport pickups", [Recogidas en aeropuertos],
+            "Expected Airport pickups", 3026711
+        ),
+        TREATAS({1}, 'taxi_analysis_2024'[airport_trip_share])
+    ),
+    CALCULATETABLE(
+        ROW(
+            "Scenario", "Airport pickup zones",
+            "Trips", [Trayectos totales],
+            "Expected Trips", 3130315,
+            "Recorded total USD", [Ingresos totales],
+            "Expected Recorded total USD", 240962793.91,
+            "Period hours", [Horas del periodo],
+            "Expected Period hours", 8784,
+            "Trips per hour", [Trayectos medios por hora],
+            "Expected Trips per hour", 356.3655510018215,
+            "Average total USD", [Importe medio por trayecto],
+            "Expected Average total USD", 76.97717127828989,
+            "Airport fee trips", [Trayectos con recargo registrado],
+            "Expected Airport fee trips", 3026711,
+            "Airport pickups", [Recogidas en aeropuertos],
+            "Expected Airport pickups", 3130315
+        ),
+        TREATAS({1}, 'taxi_analysis_2024'[airport_pickup])
+    ),
+    CALCULATETABLE(
+        ROW(
+            "Scenario", "Newark zone incl zero hours",
+            "Trips", [Trayectos totales],
+            "Expected Trips", 1238,
+            "Recorded total USD", [Ingresos totales],
+            "Expected Recorded total USD", 116723.44,
+            "Period hours", [Horas del periodo],
+            "Expected Period hours", 8784,
+            "Trips per hour", [Trayectos medios por hora],
+            "Expected Trips per hour", 0.14093806921675775,
+            "Average total USD", [Importe medio por trayecto],
+            "Expected Average total USD", 94.28387722132472,
+            "Airport fee trips", [Trayectos con recargo registrado],
+            "Expected Airport fee trips", 1,
+            "Airport pickups", [Recogidas en aeropuertos],
+            "Expected Airport pickups", 1238
+        ),
+        TREATAS({1}, 'taxi_analysis_2024'[PULocationID])
+    ),
+    CALCULATETABLE(
+        ROW(
+            "Scenario", "Spring transition date",
+            "Trips", [Trayectos totales],
+            "Expected Trips", 98121,
+            "Recorded total USD", [Ingresos totales],
+            "Expected Recorded total USD", 2772257.86,
+            "Period hours", [Horas del periodo],
+            "Expected Period hours", 23,
+            "Trips per hour", [Trayectos medios por hora],
+            "Expected Trips per hour", 4266.130434782609,
+            "Average total USD", [Importe medio por trayecto],
+            "Expected Average total USD", 28.253461134721412,
+            "Airport fee trips", [Trayectos con recargo registrado],
+            "Expected Airport fee trips", 9968,
+            "Airport pickups", [Recogidas en aeropuertos],
+            "Expected Airport pickups", 9822
+        ),
+        TREATAS({DATE(2024, 3, 10)}, 'DimHora'[date])
+    ),
+    CALCULATETABLE(
+        ROW(
+            "Scenario", "Autumn transition date",
+            "Trips", [Trayectos totales],
+            "Expected Trips", 117134,
+            "Recorded total USD", [Ingresos totales],
+            "Expected Recorded total USD", 3293021.61,
+            "Period hours", [Horas del periodo],
+            "Expected Period hours", 25,
+            "Trips per hour", [Trayectos medios por hora],
+            "Expected Trips per hour", 4685.36,
+            "Average total USD", [Importe medio por trayecto],
+            "Expected Average total USD", 28.113285724042544,
+            "Airport fee trips", [Trayectos con recargo registrado],
+            "Expected Airport fee trips", 9399,
+            "Airport pickups", [Recogidas en aeropuertos],
+            "Expected Airport pickups", 9257
+        ),
+        TREATAS({DATE(2024, 11, 3)}, 'DimHora'[date])
+    ),
+    CALCULATETABLE(
+        ROW(
+            "Scenario", "Hour 01 all year",
+            "Trips", [Trayectos totales],
+            "Expected Trips", 737682,
+            "Recorded total USD", [Ingresos totales],
+            "Expected Recorded total USD", 19270081.93,
+            "Period hours", [Horas del periodo],
+            "Expected Period hours", 367,
+            "Trips per hour", [Trayectos medios por hora],
+            "Expected Trips per hour", 2010.032697547684,
+            "Average total USD", [Importe medio por trayecto],
+            "Expected Average total USD", 26.122478154543558,
+            "Airport fee trips", [Trayectos con recargo registrado],
+            "Expected Airport fee trips", 44963,
+            "Airport pickups", [Recogidas en aeropuertos],
+            "Expected Airport pickups", 45987
+        ),
+        TREATAS({1}, 'DimHora'[pickup_hour_num])
+    ),
+    CALCULATETABLE(
+        ROW(
+            "Scenario", "Unknown precipitation",
+            "Trips", [Trayectos totales],
+            "Expected Trips", 313245,
+            "Recorded total USD", [Ingresos totales],
+            "Expected Recorded total USD", 9320603.94,
+            "Period hours", [Horas del periodo],
+            "Expected Period hours", 82,
+            "Trips per hour", [Trayectos medios por hora],
+            "Expected Trips per hour", 3820.060975609756,
+            "Average total USD", [Importe medio por trayecto],
+            "Expected Average total USD", 29.75499669587703,
+            "Airport fee trips", [Trayectos con recargo registrado],
+            "Expected Airport fee trips", 28150,
+            "Airport pickups", [Recogidas en aeropuertos],
+            "Expected Airport pickups", 27941
+        ),
+        TREATAS({"Unknown"}, 'DimHora'[precipitation_category])
+    )
+    )
+RETURN
+    ADDCOLUMNS(
+        Results,
+        "Pass",
+        [Trips] = [Expected Trips]
+            && ABS([Recorded total USD] - [Expected Recorded total USD]) <= 0.01
+            && [Period hours] = [Expected Period hours]
+            && ABS([Trips per hour] - [Expected Trips per hour]) <= 0.0000001
+            && ABS([Average total USD] - [Expected Average total USD]) <= 0.0000001
+            && [Airport fee trips] = [Expected Airport fee trips]
+            && [Airport pickups] = [Expected Airport pickups]
+    )
+ORDER BY [Scenario]

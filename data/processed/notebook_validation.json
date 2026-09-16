@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "code_cells": 11,
+  "execution_method": "fresh in-process IPython kernel; standard notebook output capture",
+  "limitation": "This run checks in-process execution only; separate Jupyter startup and its UI were not tested",
+  "executed_on": "2026-09-16",
+  "language": "English"
+}

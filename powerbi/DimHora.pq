@@ -1,0 +1,33 @@
+// Query name: DimHora. ProjectRoot is a text parameter containing the extracted folder path.
+let
+    Source = Csv.Document(File.Contents(ProjectRoot & "/data/processed/dim_hour_2024.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+    EmptyToNull = Table.TransformColumns(Headers, {{"elapsed_hours", each if _ = "" then null else _, type nullable text},{"dst_ambiguous", each if _ = "" then null else _, type nullable text},{"pickup_month", each if _ = "" then null else _, type nullable text},{"pickup_dayofweek", each if _ = "" then null else _, type nullable text},{"pickup_hour_num", each if _ = "" then null else _, type nullable text},{"is_weekend", each if _ = "" then null else _, type nullable text},{"hour_segment_order", each if _ = "" then null else _, type nullable text},{"rain_mm", each if _ = "" then null else _, type nullable text},{"trace_precipitation", each if _ = "" then null else _, type nullable text},{"precipitation_known", each if _ = "" then null else _, type nullable text},{"temp_c", each if _ = "" then null else _, type nullable text},{"visibility", each if _ = "" then null else _, type nullable text},{"wind_speed", each if _ = "" then null else _, type nullable text},{"rain_flag", each if _ = "" then null else _, type nullable text},{"moderate_rain_flag", each if _ = "" then null else _, type nullable text},{"heavy_rain_flag", each if _ = "" then null else _, type nullable text},{"low_visibility_flag", each if _ = "" then null else _, type nullable text},{"is_dark", each if _ = "" then null else _, type nullable text}}),
+    Typed = Table.TransformColumnTypes(EmptyToNull, {{"pickup_hour", type datetime},
+        {"elapsed_hours", Int64.Type},
+        {"dst_ambiguous", Int64.Type},
+        {"pickup_month", Int64.Type},
+        {"pickup_dayofweek", Int64.Type},
+        {"pickup_hour_num", Int64.Type},
+        {"is_weekend", Int64.Type},
+        {"pickup_weekday_name", type text},
+        {"hour_segment_order", Int64.Type},
+        {"hour_segment", type text},
+        {"rain_mm", type number},
+        {"trace_precipitation", type number},
+        {"precipitation_known", Int64.Type},
+        {"temp_c", type number},
+        {"visibility", type number},
+        {"wind_speed", type number},
+        {"precipitation_category", type text},
+        {"rain_flag", type number},
+        {"moderate_rain_flag", type number},
+        {"heavy_rain_flag", type number},
+        {"low_visibility_flag", type number},
+        {"temp_bin", type text},
+        {"is_dark", type number}}, "en-US"),
+    WithDate = Table.AddColumn(Typed, "date", each Date.From([pickup_hour]), type date),
+    LabelPairs = {{"Lunes", "Monday"}, {"Martes", "Tuesday"}, {"Miércoles", "Wednesday"}, {"Jueves", "Thursday"}, {"Viernes", "Friday"}, {"Sábado", "Saturday"}, {"Domingo", "Sunday"}, {"Madrugada", "Overnight"}, {"Mañana", "Morning"}, {"Tarde", "Afternoon"}, {"Noche", "Evening"}, {"Sin precipitación", "No precipitation"}, {"Traza", "Trace"}, {"Ligera", "Light"}, {"Moderada", "Moderate"}, {"Intensa", "Heavy"}, {"Desconocida", "Unknown"}},
+    EnglishLabels = List.Accumulate(LabelPairs, WithDate, (state, pair) => Table.ReplaceValue(state, pair{0}, pair{1}, Replacer.ReplaceValue, {"pickup_weekday_name", "hour_segment", "precipitation_category"}))
+in
+    EnglishLabels

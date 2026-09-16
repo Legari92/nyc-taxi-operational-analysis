@@ -1,0 +1,122 @@
+table _Medidas
+	lineageTag: ff6534f5-4db3-49a0-91ed-1633c18821b5
+
+	measure 'Trayectos totales' = SUM('taxi_analysis_2024'[trip_count])
+		formatString: #,0
+		lineageTag: bb0e773a-9f3b-4375-9d1d-12cc2eb50cb9
+
+	measure 'Ingresos totales' = SUM('taxi_analysis_2024'[total_revenue])
+		formatString: \$#,0.00
+		lineageTag: f42a334c-f48c-4cea-b847-ece5ba6bbdeb
+
+	measure 'Importe medio por trayecto' = DIVIDE([Ingresos totales], [Trayectos totales])
+		formatString: \$#,0.00
+		lineageTag: 93c7eab3-0d7d-44db-956c-be9600868a74
+
+	measure 'Duración media ponderada (min)' = DIVIDE(SUM('taxi_analysis_2024'[total_trip_duration_min]), [Trayectos totales])
+		formatString: #,0.00
+		lineageTag: 768ce028-b1d1-4712-a10e-e0fa2a0f18f1
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Proporción de viajes aeroportuarios' = DIVIDE([Trayectos con recargo registrado], [Trayectos totales])
+		formatString: 0.00%
+		lineageTag: aff64a1d-0b30-4a34-bba0-69a984e949b3
+
+	measure 'Trayectos medios por hora' = DIVIDE(COALESCE([Trayectos totales], 0), [Horas del periodo])
+		formatString: #,0.00
+		lineageTag: 211998bf-225e-41d3-8087-4198b84d8f4a
+
+	measure 'Distancia media ponderada' = DIVIDE(SUM('taxi_analysis_2024'[total_trip_distance]), [Trayectos totales])
+		formatString: #,0.00
+		lineageTag: 6d6922a1-bfee-4581-9e61-3f2bda98a0dc
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Tarifa media ponderada' = DIVIDE(SUM('taxi_analysis_2024'[total_fare_amount]), [Trayectos totales])
+		formatString: \$#,0.00
+		lineageTag: 52aab1d5-f119-43ba-ae9f-0e670e720444
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Importe medio filtrado' = IF([Trayectos totales] >= 5000, [Importe medio por trayecto], BLANK())
+		formatString: \$#,0.00
+		lineageTag: 1a4287af-a7ba-4695-9a5f-df0b79925732
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	measure 'Duración media ponderada' = [Duración media ponderada (min)]
+		formatString: #,0.00
+		lineageTag: 825ff1ca-47b0-4191-bb3c-562c9a45c838
+
+	measure 'Trayectos con recargo registrado' = SUMX('taxi_analysis_2024', 'taxi_analysis_2024'[airport_trip_share] * 'taxi_analysis_2024'[trip_count])
+		formatString: #,0
+		lineageTag: 69967e06-bffb-4ffe-af13-f224d15ea777
+
+	measure 'Recogidas en aeropuertos' = SUMX('taxi_analysis_2024', 'taxi_analysis_2024'[airport_pickup] * 'taxi_analysis_2024'[trip_count])
+		formatString: #,0
+		lineageTag: 7773c793-ec0b-4582-ba98-3aa239803adb
+
+	measure 'Proporción de recogidas en aeropuertos' = DIVIDE([Recogidas en aeropuertos], [Trayectos totales])
+		formatString: 0.00%
+		lineageTag: fac9fdfb-d45f-4b57-ae32-91cd7380bcfb
+
+	measure 'Airport_fee sin dato' = SUM('taxi_analysis_2024'[airport_fee_missing_count])
+		formatString: #,0
+		lineageTag: 5f3c1718-bec4-4112-9929-d176d19a1c88
+
+	measure 'Horas del periodo' = SUM('DimHora'[elapsed_hours])
+		formatString: #,0
+		lineageTag: 65bc5e36-6390-4869-bd7a-444c7cd89960
+
+	measure 'Proporción con propina registrada' = DIVIDE(SUM('taxi_analysis_2024'[tipped_trip_count]), [Trayectos totales])
+		formatString: 0.00%
+		lineageTag: 52caea0c-3e16-43e3-84a7-557411bb8c1b
+
+	measure 'Mean amount - non-airport' = CALCULATE([Importe medio por trayecto], KEEPFILTERS('taxi_analysis_2024'[airport_pickup] = 0))
+		formatString: $#,0.00
+		lineageTag: 2e622129-8564-4891-bf4a-a4f962fb180b
+
+	measure 'Trips - weekday mornings' = CALCULATE([Trayectos totales], KEEPFILTERS(FILTER('DimHora', 'DimHora'[pickup_dayofweek] <= 4 && 'DimHora'[pickup_hour_num] >= 7 && 'DimHora'[pickup_hour_num] < 10)))
+		formatString: #,0
+		lineageTag: e49b4edc-57c9-410f-869f-08c2787dfec5
+
+	measure 'Trips - weekend nights' = CALCULATE([Trayectos totales], KEEPFILTERS(FILTER('DimHora', ('DimHora'[pickup_dayofweek] IN {4,5} && 'DimHora'[pickup_hour_num] >= 20) || ('DimHora'[pickup_dayofweek] IN {5,6} && 'DimHora'[pickup_hour_num] < 3))))
+		formatString: #,0
+		lineageTag: 3340cee3-6f50-4380-847f-14fb79c102e5
+
+	measure 'Share - weekday mornings' = DIVIDE([Trips - weekday mornings], CALCULATE([Trips - weekday mornings], REMOVEFILTERS('taxi_analysis_2024'[pickup_zone])))
+		formatString: 0.00%
+		lineageTag: a719d84d-7f25-4dbe-ae82-2506791e79b4
+
+	measure 'Share - weekend nights' = DIVIDE([Trips - weekend nights], CALCULATE([Trips - weekend nights], REMOVEFILTERS('taxi_analysis_2024'[pickup_zone])))
+		formatString: 0.00%
+		lineageTag: aeba0e30-eeea-45d9-b4cc-e8c8098c7f3a
+
+	measure 'Trips per hour - common weekday mix' =
+			VAR SelectedDays = VALUES('DimHora'[pickup_dayofweek])
+			VAR ReferenceHours = CALCULATE([Horas del periodo], REMOVEFILTERS('DimHora'), TREATAS(SelectedDays, 'DimHora'[pickup_dayofweek]))
+			RETURN SUMX(SelectedDays,
+			    VAR DayNumber = 'DimHora'[pickup_dayofweek]
+			    VAR DayRate = CALCULATE([Trayectos medios por hora])
+			    VAR AnnualDayHours = CALCULATE([Horas del periodo], REMOVEFILTERS('DimHora'), TREATAS({DayNumber}, 'DimHora'[pickup_dayofweek]))
+			    RETURN DayRate * DIVIDE(AnnualDayHours, ReferenceHours)
+			)
+		formatString: #,0.00
+		lineageTag: 396c8c75-74b9-49a7-a6fb-4cbf745957f7
+
+	column Measures
+		isHidden
+		lineageTag: 8b8ed8a0-7a99-45e4-93ff-6eb938d8f3d9
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Measures]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Medidas = calculated
+		mode: import
+		source = DATATABLE("Measures", STRING, {{""}})
+
+	annotation PBI_Id = 56e484bd5e7a4dadbc52e7e3d22cc740
+

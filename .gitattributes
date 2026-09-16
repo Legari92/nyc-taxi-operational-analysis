@@ -1,2 +1,3 @@
-# Auto detect text files and perform LF normalization
+# Normalize code and documentation; preserve CSV bytes for recorded checksums.
 * text=auto
+*.csv -text

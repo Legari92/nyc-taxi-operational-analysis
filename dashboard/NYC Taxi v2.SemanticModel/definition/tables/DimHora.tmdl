@@ -1,0 +1,200 @@
+table DimHora
+	lineageTag: 35da2731-cf7a-46a8-9460-b44e2e7cb5b5
+
+	column pickup_hour
+		dataType: dateTime
+		lineageTag: 3bd465d3-6113-4b17-ae6b-0d517d1d05d2
+		summarizeBy: none
+		sourceColumn: pickup_hour
+
+	column elapsed_hours
+		dataType: int64
+		formatString: #,0
+		lineageTag: 2a7f2ae3-5d8c-4a90-b0f4-6339d5aa6ad8
+		summarizeBy: none
+		sourceColumn: elapsed_hours
+
+	column dst_ambiguous
+		dataType: int64
+		formatString: #,0
+		lineageTag: 9d9e98ea-7aa9-4ebb-944a-aa854dc3bbd9
+		summarizeBy: none
+		sourceColumn: dst_ambiguous
+
+	column pickup_month
+		dataType: int64
+		formatString: #,0
+		lineageTag: e78ebd39-fc4d-4978-a24e-5042de4448a1
+		summarizeBy: none
+		sourceColumn: pickup_month
+
+	column pickup_dayofweek
+		dataType: int64
+		formatString: #,0
+		lineageTag: 04660f25-e4be-4eaa-881f-6e69d89414d4
+		summarizeBy: none
+		sourceColumn: pickup_dayofweek
+
+	column pickup_hour_num
+		dataType: int64
+		formatString: #,0
+		lineageTag: 13e86969-aa71-40b9-a366-4899ababb5c6
+		summarizeBy: none
+		sourceColumn: pickup_hour_num
+
+	column is_weekend
+		dataType: int64
+		formatString: #,0
+		lineageTag: e0a286ba-c47d-4e30-a8f1-10c0600d8a9d
+		summarizeBy: none
+		sourceColumn: is_weekend
+
+	column pickup_weekday_name
+		dataType: string
+		lineageTag: aa91152b-0c51-4f45-ab9d-1884977b86a4
+		summarizeBy: none
+		sourceColumn: pickup_weekday_name
+		sortByColumn: pickup_dayofweek
+
+	column hour_segment_order
+		dataType: int64
+		formatString: #,0
+		lineageTag: 62c1ad56-cecc-4431-bc2e-e7b16f1e65da
+		summarizeBy: none
+		sourceColumn: hour_segment_order
+
+	column hour_segment
+		dataType: string
+		lineageTag: 65aaaadb-dcaf-4ab7-98f4-9ec696d2b687
+		summarizeBy: none
+		sourceColumn: hour_segment
+		sortByColumn: hour_segment_order
+
+	column rain_mm
+		dataType: double
+		lineageTag: 2f615101-32bb-4890-b9f5-32094f4a530b
+		summarizeBy: none
+		sourceColumn: rain_mm
+
+	column trace_precipitation
+		dataType: double
+		lineageTag: f3557d64-9a45-4178-a6ac-b25bb5b49663
+		summarizeBy: none
+		sourceColumn: trace_precipitation
+
+	column precipitation_known
+		dataType: int64
+		formatString: #,0
+		lineageTag: b19c5dd7-3435-4b76-b005-22f0963f558f
+		summarizeBy: none
+		sourceColumn: precipitation_known
+
+	column temp_c
+		dataType: double
+		lineageTag: 54ee8888-96c5-4e40-9344-d5e1de3a66f3
+		summarizeBy: none
+		sourceColumn: temp_c
+
+	column visibility
+		dataType: double
+		lineageTag: f09c5e69-1eb2-45d8-86af-09f038f65d53
+		summarizeBy: none
+		sourceColumn: visibility
+
+	column wind_speed
+		dataType: double
+		lineageTag: 45581b3e-d2cf-4146-b53c-5485f054e31c
+		summarizeBy: none
+		sourceColumn: wind_speed
+
+	column precipitation_category
+		dataType: string
+		lineageTag: dced0ff2-0159-468c-bff8-db0fc9875621
+		summarizeBy: none
+		sourceColumn: precipitation_category
+
+	column rain_flag
+		dataType: double
+		lineageTag: 1873c55b-980b-4e0a-a0ee-d0be7f4e510c
+		summarizeBy: none
+		sourceColumn: rain_flag
+
+	column moderate_rain_flag
+		dataType: double
+		lineageTag: 2fb0cfef-87bc-4a88-a2c6-6a1a93440b94
+		summarizeBy: none
+		sourceColumn: moderate_rain_flag
+
+	column heavy_rain_flag
+		dataType: double
+		lineageTag: d3c41dd2-5522-467d-8674-c958243c6c4c
+		summarizeBy: none
+		sourceColumn: heavy_rain_flag
+
+	column low_visibility_flag
+		dataType: double
+		lineageTag: 0a578a25-e734-41bb-a679-300d4f50930c
+		summarizeBy: none
+		sourceColumn: low_visibility_flag
+
+	column temp_bin
+		dataType: string
+		lineageTag: 0eb00a7c-fe93-40c2-a037-85cd5ee764c2
+		summarizeBy: none
+		sourceColumn: temp_bin
+
+	column is_dark
+		dataType: double
+		lineageTag: 08118459-9be0-49d9-a0d3-a2350d101709
+		summarizeBy: none
+		sourceColumn: is_dark
+
+	column date
+		dataType: dateTime
+		formatString: yyyy-MM-dd
+		lineageTag: 9eabca2c-709e-40c3-b2c7-bb2fb79d2105
+		summarizeBy: none
+		sourceColumn: date
+
+	column 'Contexto de luz' = IF(ISBLANK('DimHora'[is_dark]), "Unknown", IF('DimHora'[is_dark] = 1, "Darkness", "Daylight"))
+		dataType: string
+		lineageTag: 6367e7ee-bcbd-4294-94a8-b187219bc838
+		summarizeBy: none
+
+	partition DimHora = m
+		mode: import
+		source =
+				// Query name: DimHora. ProjectRoot is a text parameter containing the extracted folder path.
+				let
+				    Source = Csv.Document(File.Contents(ProjectRoot & "/data/processed/dim_hour_2024.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    EmptyToNull = Table.TransformColumns(Headers, {{"elapsed_hours", each if _ = "" then null else _, type nullable text},{"dst_ambiguous", each if _ = "" then null else _, type nullable text},{"pickup_month", each if _ = "" then null else _, type nullable text},{"pickup_dayofweek", each if _ = "" then null else _, type nullable text},{"pickup_hour_num", each if _ = "" then null else _, type nullable text},{"is_weekend", each if _ = "" then null else _, type nullable text},{"hour_segment_order", each if _ = "" then null else _, type nullable text},{"rain_mm", each if _ = "" then null else _, type nullable text},{"trace_precipitation", each if _ = "" then null else _, type nullable text},{"precipitation_known", each if _ = "" then null else _, type nullable text},{"temp_c", each if _ = "" then null else _, type nullable text},{"visibility", each if _ = "" then null else _, type nullable text},{"wind_speed", each if _ = "" then null else _, type nullable text},{"rain_flag", each if _ = "" then null else _, type nullable text},{"moderate_rain_flag", each if _ = "" then null else _, type nullable text},{"heavy_rain_flag", each if _ = "" then null else _, type nullable text},{"low_visibility_flag", each if _ = "" then null else _, type nullable text},{"is_dark", each if _ = "" then null else _, type nullable text}}),
+				    Typed = Table.TransformColumnTypes(EmptyToNull, {{"pickup_hour", type datetime},
+				        {"elapsed_hours", Int64.Type},
+				        {"dst_ambiguous", Int64.Type},
+				        {"pickup_month", Int64.Type},
+				        {"pickup_dayofweek", Int64.Type},
+				        {"pickup_hour_num", Int64.Type},
+				        {"is_weekend", Int64.Type},
+				        {"pickup_weekday_name", type text},
+				        {"hour_segment_order", Int64.Type},
+				        {"hour_segment", type text},
+				        {"rain_mm", type number},
+				        {"trace_precipitation", type number},
+				        {"precipitation_known", Int64.Type},
+				        {"temp_c", type number},
+				        {"visibility", type number},
+				        {"wind_speed", type number},
+				        {"precipitation_category", type text},
+				        {"rain_flag", type number},
+				        {"moderate_rain_flag", type number},
+				        {"heavy_rain_flag", type number},
+				        {"low_visibility_flag", type number},
+				        {"temp_bin", type text},
+				        {"is_dark", type number}}, "en-US"),
+				    WithDate = Table.AddColumn(Typed, "date", each Date.From([pickup_hour]), type date),
+				    LabelPairs = {{"Lunes", "Monday"}, {"Martes", "Tuesday"}, {"Miércoles", "Wednesday"}, {"Jueves", "Thursday"}, {"Viernes", "Friday"}, {"Sábado", "Saturday"}, {"Domingo", "Sunday"}, {"Madrugada", "Overnight"}, {"Mañana", "Morning"}, {"Tarde", "Afternoon"}, {"Noche", "Evening"}, {"Sin precipitación", "No precipitation"}, {"Traza", "Trace"}, {"Ligera", "Light"}, {"Moderada", "Moderate"}, {"Intensa", "Heavy"}, {"Desconocida", "Unknown"}},
+				    EnglishLabels = List.Accumulate(LabelPairs, WithDate, (state, pair) => Table.ReplaceValue(state, pair{0}, pair{1}, Replacer.ReplaceValue, {"pickup_weekday_name", "hour_segment", "precipitation_category"}))
+				in
+				    EnglishLabels
+

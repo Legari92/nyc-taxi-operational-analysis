@@ -1,12 +1,36 @@
-# Processed dataset too large for GitHub
-data/processed/taxi_analysis_2024_final.csv
-
-# Temporary/cache files
+.venv/
 __pycache__/
+*.py[cod]
 .ipynb_checkpoints/
-.DS_Store
-Thumbs.db
+data/raw/taxi/*.parquet
+data/processed/*.parquet
+data/processed/taxi_analysis_2024_final.csv
+data/processed/.*
+data/raw/taxi/*.download
+**/.pbi/
+*.zip
+tmp/
+publication/
 
-# Power BI temporary/cache files
-*.tmp
-*.bak
+# Local working copies and continuation notes; current PBIP/PDF stay included.
+*.pbix
+*.code-workspace
+START_HERE.md
+docs/CODEX_HANDOFF.md
+docs/LOCAL_PREFLIGHT.md
+docs/PORTFOLIO_PLAN.md
+docs/PROJECT_WALKTHROUGH.md
+docs/POWER_BI_ANALYTICAL_UPDATE.md
+docs/README_original.md
+docs/handoff_file_checksums.json
+docs/reference_images/
+
+# Historical or duplicate runs; retain final analytical validation evidence.
+data/processed/handoff_status.json
+data/processed/local_powerbi_input_validation.json
+data/processed/powerbi_analytical_before_reopen.json
+data/processed/powerbi_analytical_visual_review_first.json
+data/processed/powerbi_desktop_validation.json
+data/processed/powerbi_reopen_validation.json
+data/processed/powerbi_visual_review.json
+data/processed/powerbi_visual_review_baseline_20260907.json

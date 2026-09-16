@@ -1,8 +1,9 @@
-pandas
-numpy
-matplotlib
-scipy
-statsmodels
-pyarrow
-openpyxl
-jupyter
+# Versions from the recorded analysis run: docs/validated_environment.json.
+pandas==2.2.3
+numpy==2.3.5
+pyarrow==25.0.1
+matplotlib==3.10.8
+nbformat==5.11.1
+ipykernel==7.3.0
+jupyterlab>=4,<5
+tzdata>=2024.1

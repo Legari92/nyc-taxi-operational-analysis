@@ -1,0 +1,17 @@
+// Replace/create these columns in taxi_analysis_2024, one definition at a time.
+Segmento aeroportuario =
+IF('taxi_analysis_2024'[airport_trip_share] = 1,
+   "Positive recorded fee", "No positive recorded fee")
+
+Tipo de recogida =
+IF('taxi_analysis_2024'[airport_pickup] = 1,
+   "Airport-zone pickup", "Outside airport zone")
+
+// Existing column retained temporarily for visual compatibility.
+// For final time axes use DimHora[hour_segment] and sort by hour_segment_order.
+Franja horaria = 'taxi_analysis_2024'[hour_segment]
+
+// Create in DimHora:
+Contexto de luz =
+IF(ISBLANK('DimHora'[is_dark]), "Unknown",
+   IF('DimHora'[is_dark] = 1, "Darkness", "Daylight"))

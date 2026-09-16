@@ -1,0 +1,22 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-ES
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["ProjectRoot","taxi_analysis_2024","DimHora"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table taxi_analysis_2024
+ref table DateTableTemplate_7fa2e1b0-c163-4f78-a80a-b682f142fcb2
+ref table LocalDateTable_2d90c325-049f-4167-b7b9-098a2cdf58cb
+ref table _Medidas
+ref table DimHora
+
+ref cultureInfo en-US
+

@@ -1,176 +1,112 @@
-# NYC Taxi Demand & Operational Analysis 2024
+# NYC Taxi - Operational Analysis 2024
 
-Análisis operativo de 40 millones de trayectos de taxi amarillo en Nueva York, combinando datos de la NYC TLC con registros meteorológicos horarios de NOAA y visualizado en Power BI.
-El objetivo es estudiar cómo cambian la demanda y el valor económico de los viajes según la hora, la zona de recogida y algunos factores de contexto, como la meteorología y el componente aeroportuario.
+**What do annual taxi totals hide about location, timing and trip composition?** This portfolio project uses Python and Power BI to investigate 39.68 million retained NYC yellow taxi trips. It is a descriptive case study for understanding recorded activity and deciding which patterns deserve closer investigation.
 
-## Objetivo del proyecto
+**Stack:** Python, pandas, SQL validation with DuckDB, Power Query and DAX. The README, notebook, figures and report definitions use English. Legacy technical measure and column identifiers are retained to preserve model connections; visible report labels are translated.
 
-El proyecto busca responder a tres preguntas principales:
+[View the four-page dashboard PDF](dashboard/NYC%20Taxi%20v2.pdf) · [Open the editable Power BI project](dashboard/NYC%20Taxi%20v2.pbip) · [Read the findings](docs/ANALYTICAL_FINDINGS.md) · [Inspect the notebook](nyc_taxi_analysis_2024.ipynb)
 
-- ¿En qué momentos del día y de la semana se concentra más actividad?
-- ¿Qué zonas combinan mayor volumen operativo y mayor valor medio por trayecto?
-- ¿Qué papel tienen los trayectos aeroportuarios y la meteorología dentro del comportamiento general del sistema?
+![Geographic analysis: airport composition and pickup-zone rankings](images/dashboard/03_geographic_analysis.png)
 
-El enfoque no es predictivo, sino descriptivo y analítico. Se prioriza una lectura operativa clara sobre la demanda, el valor económico y la segmentación de zonas.
+## Three findings
 
-## Fuentes de datos
+| Question | Result | Why it matters |
+|---|---|---|
+| Does airport composition affect Queens' higher average trip amount? | Excluding airport pickups lowers Queens' average from **$73.16 to $49.98**, versus Manhattan's **$23.93**. The observed gap narrows **47.07%**. | Borough averages mix different trip populations. Higher recorded amounts alone do not establish profitability. |
+| Is October's peak explained by its weekday mix? | October remains first after weekday standardization at **4,926.86 trips per real hour**, just **1.09%** above September. | The ranking survives this adjustment, but the lead is modest. The adjustment does not control for holidays, weather or taxi supply. |
+| Do the same pickup zones dominate at different times? | Only **Lincoln Square East** appears in both top-ten lists for weekday mornings and Friday/Saturday nights. | One annual ranking hides different geographic patterns. The windows describe timing; actual trip purpose is unknown. |
 
-Se integraron tres fuentes principales:
+The [detailed analysis](docs/ANALYTICAL_FINDINGS.md) defines the comparisons and links each finding to its supporting table and calculation.
 
-1. **NYC TLC Yellow Taxi Trip Records 2024**  
-   Datos mensuales de trayectos de taxi amarillo en formato parquet.  
-   Fuente: NYC Taxi & Limousine Commission.
+## Explore the dashboard
 
-2. **NOAA Local Climatological Data 2024**  
-   Datos meteorológicos horarios usados para incorporar temperatura, precipitación, visibilidad, viento y contexto de luz/oscuridad.  
-   Fuente: NOAA / NCEI.
+| Page | Focus | Preview |
+|---|---|---|
+| Overview | Annual KPIs, monthly totals and pickup groups | [View](images/dashboard/01_overview.png) |
+| Temporal patterns | Weekday/hour patterns and calendar-adjusted monthly activity | [View](images/dashboard/02_temporal_patterns.png) |
+| Geographic analysis | Airport composition and zone rankings by time window | [View](images/dashboard/03_geographic_analysis.png) |
+| Operational segments | Airport pickup versus recorded surcharge, with light context | [View](images/dashboard/04_operational_segments.png) |
 
-3. **Taxi Zone Lookup Table**  
-   Tabla auxiliar para relacionar `PULocationID` con borough, zona y service zone.  
-   Fuente: NYC Taxi & Limousine Commission.
+The editable project is [NYC Taxi v2.pbip](dashboard/NYC%20Taxi%20v2.pbip), with its adjacent report and semantic-model folders. A fresh checkout requires data regeneration and refresh.
 
-Por tamaño, los ficheros raw de taxi pueden no estar incluidos directamente en el repositorio. El notebook está preparado para trabajar con los archivos descargados dentro de `data/raw/`.
+**English presentation:** report titles, captions, aliases and category labels are in English. The translated model was refreshed and saved, all 93 DAX checks passed, and all four pages of the September 16 Desktop PDF passed visual review. The previews are unedited renders of that export. See the [language validation record](data/processed/language_validation.json).
 
-## Herramientas utilizadas
+## Data and approach
 
-- Python
-- pandas
-- numpy
-- matplotlib
-- scipy
-- Power BI
-- Jupyter Notebook
-- VS Code
+The analysis combines the twelve 2024 NYC TLC yellow taxi files, the taxi-zone lookup and NOAA Central Park weather observations. Source links, cleaning rules and definitions are in the [methodology](docs/METHODOLOGY.md).
 
-## Estructura del repositorio
+| Coverage | Value |
+|---|---:|
+| Source records | 41,169,720 |
+| Retained trips | 39,677,878 |
+| Total recorded amount | $1,135,817,146.18 |
+| Mean recorded amount per trip | $28.63 |
+| Calendar exposure | 8,784 real hours |
 
-```text
-nyc-taxi-analysis-2024/
-├── data/
-│   ├── raw/
-│   │   ├── taxi/
-│   │   ├── weather/
-│   └── processed/
-│       └── taxi_analysis_2024_final.csv
-├── dashboard/
-│   └── nyc_taxi_dashboard_2024.pbix
-├── images/
-│   ├── dashboard_resumen.png
-│   ├── dashboard_temporal.png
-│   ├── dashboard_geografico.png
-│   └── dashboard_segmentos.png
-├── nyc_taxi_analysis_2024.ipynb
-├── README.md
-└── requirements.txt
-```
+The ETL processes one month at a time, records exclusions, and aggregates by pickup hour, zone and positive-surcharge indicator. Additive sums and trip counts support weighted means. A separate hour dimension retains zero-trip hours and the 23/25-hour daylight-saving days. Airport pickup location and recorded airport surcharge remain separate definitions.
 
-El notebook principal se mantiene en la raíz del proyecto para conservar rutas relativas simples hacia `data/raw/` y `data/processed/`.
+## What changed in this update
 
-## Metodología
+This update continues the original NYC Taxi portfolio project with the same 2024 sources and four-page report structure. The original annual total of **39,677,878 trips was already correct** and remains unchanged.
 
-El flujo de trabajo se organiza en cinco fases:
+- **Corrected hourly activity:** trips are divided by real calendar hours, replacing an average of aggregated fact-row counts. The calendar retains zero-trip hours and handles daylight-saving changes. Trip averages continue to use weighted sums and counts.
+- **Clearer segment definitions:** airport pickup location is separate from positive recorded airport surcharge; missing fees are identified. Recorded amounts are labelled without implying profit.
+- **Three added comparisons:** airport composition in borough averages, monthly activity under a common weekday mix, and pickup-zone rankings for morning versus weekend-night windows. The findings above show what each comparison adds.
+- **Stronger verification:** independent SQL reconciliation, focused Python tests, and 12 baseline plus 81 analytical DAX checks support the calculations. All four pages of the English Desktop PDF passed visual review. Overview slicer filtering and reset were also checked; other chart interactions were not manually tested.
+- **Easier review and reproduction:** editable PBIP definitions, the reviewed English PDF, dashboard previews, Python figures, source checksums and setup instructions accompany the code. Old working copies and internal handoff notes are excluded from the publication package.
 
-1. **Carga y validación inicial**  
-   Se revisan columnas, tipos de datos, valores nulos y rangos básicos de las variables principales.
+The scope remains descriptive. This update does not add a predictive model, establish causal effects or demonstrate business savings.
 
-2. **Limpieza y preparación**  
-   Se filtran registros fuera del año 2024, trayectos con importes o duraciones no válidas y valores extremos poco realistas. También se crean variables temporales como hora, mes, día de la semana y fin de semana.
+## Validation
 
-3. **Agregación operativa**  
-   Los datos de taxi se agregan a nivel de hora y zona de recogida. Este nivel permite reducir el volumen de datos y analizar patrones operativos sin perder la dimensión temporal y geográfica.
+| Evidence | Result |
+|---|---|
+| [Independent SQL over raw files](data/processed/independent_validation.json) | Matches the ETL's 39,677,878 retained trips and reviewed aggregate amounts within tolerance |
+| [Python tests](tests/) and [executed notebook](data/processed/notebook_validation.json) | All six Python tests and all 11 translated notebook code cells passed on September 16 |
+| [Additional comparison checks](data/processed/analysis_questions/validation.json) | 28 city-hour reconciliations and three chart reviews passed |
+| [Refreshed English Power BI model](data/processed/powerbi_analytical_validation.json) | All 12 baseline scenarios and 81 analytical DAX checks passed on September 16 after refreshing the translated hour dimension |
+| [English report definitions](data/processed/powerbi_report_file_validation.json) | 80 direct field references checked |
+| [English Desktop PDF](data/processed/powerbi_analytical_visual_review.json) | All four pages passed visual review; charts populated, labels legible and no missing-data warnings |
 
-4. **Integración de fuentes**  
-   Se cruzan los datos agregados de taxi con datos meteorológicos horarios y con la tabla auxiliar de zonas.
+**Interaction coverage:** [Overview filter and reset checks](data/processed/powerbi_interaction_validation.json) confirm Queens plus August gives 314,917 trips (screenshot reviewed), and clearing restores 39,677,878 (owner confirmed). Chart selections and geographic-page interactions were not manually tested. The [Power BI guide](powerbi/IMPLEMENTATION.md) includes the repeatable checks.
 
-5. **Análisis y visualización**  
-   Se estudian patrones temporales, geográficos, aeroportuarios y meteorológicos. Finalmente, se exporta un dataset procesado para construir un dashboard en Power BI.
+## Reproduce locally
 
-## Dashboard
-
-El dashboard de Power BI resume los principales resultados del análisis en cuatro páginas:
-
-### 1. Resumen operativo
-
-Vista general del sistema con indicadores clave:
-- trayectos totales
-- ingresos totales
-- importe medio por trayecto
-- duración media
-- peso del segmento aeroportuario
-
-![Resumen operativo](images/dashboard_resumen.png)
-
-### 2. Patrones temporales
-
-Análisis de la actividad media por hora y día de la semana. Incluye una matriz tipo heatmap para detectar franjas de mayor intensidad.
-
-![Patrones temporales](images/dashboard_temporal.png)
-
-### 3. Análisis geográfico
-
-Comparación entre volumen y valor por zona de recogida. Se muestran zonas de alta actividad, zonas de mayor importe medio y la relación entre ambas dimensiones.
-
-![Análisis geográfico](images/dashboard_geografico.png)
-
-### 4. Segmentos operativos
-
-Comparación entre trayectos con componente aeroportuario y el resto del sistema, además de una lectura básica del comportamiento diurno/nocturno.
-
-![Segmentos operativos](images/dashboard_segmentos.png)
-
-## Principales hallazgos
-
-- La demanda no se distribuye de forma uniforme: la hora y la zona de recogida explican gran parte de las diferencias observadas.
-- Manhattan concentra la mayor parte del volumen operativo, pero no lidera el importe medio por trayecto.
-- Queens destaca en valor medio, principalmente por el peso de los trayectos vinculados a JFK y LaGuardia.
-- Los trayectos con componente aeroportuario son el segmento más diferenciado: son más largos, duran más y generan importes medios más altos.
-- La lluvia introduce variaciones moderadas, pero no cambia la estructura general del sistema.
-- La oscuridad resulta más informativa como variable de contexto: en horario nocturno aumenta la actividad media, aunque el importe medio tiende a bajar ligeramente.
-
-## Limitaciones
-
-- El análisis trabaja con datos agregados por hora y zona de recogida, por lo que se pierde parte del detalle individual de cada trayecto.
-- La meteorología se incorpora como contexto operativo, no como explicación causal.
-- Algunas zonas aparecen como categorías especiales o sin clasificar dentro de la tabla auxiliar.
-- El análisis se centra en la zona de recogida, no en el destino final del trayecto.
-- Las conclusiones son descriptivas y comparativas; no deben interpretarse como relaciones causales.
-
-## Cómo reproducir el proyecto
-
-1. Descargar los datos raw de taxi amarillo de 2024 desde NYC TLC.
-2. Descargar el archivo meteorológico usado en el proyecto desde NOAA / NCEI.
-3. Colocar los archivos en la estructura indicada:
-
-```text
-data/raw/taxi/
-data/raw/weather/
-data/raw/zones/
-```
-
-4. Instalar dependencias:
+Use Python 3.12 and run commands from the project root. Create a virtual environment:
 
 ```bash
-pip install -r requirements.txt
+python -m venv .venv
 ```
 
-5. Ejecutar el notebook principal:
+Activate it with `.venv\Scripts\Activate.ps1` in PowerShell or `source .venv/bin/activate` in Bash, then:
 
-```text
-nyc_taxi_analysis_2024.ipynb
+```bash
+python -m pip install -r requirements.txt
+python scripts/download_data.py
+python src/etl.py
+python scripts/analyze_operational_questions.py
+python -m unittest discover -s tests -v
 ```
 
-6. El notebook genera el dataset procesado:
+The downloader uses a pinned source snapshot and checks SHA-256 hashes. It downloads all twelve monthly trip files; allow disk space for those sources and the regenerated outputs. Weather, zones, compact aggregates and recorded validation results are included. Raw trip files, the large fact CSV/Parquet and Power BI caches are excluded from Git.
 
-```text
-data/processed/taxi_analysis_2024_final.csv
+To rerun the notebook without a separate kernel process:
+
+```bash
+python scripts/run_notebook.py
 ```
 
-7. Abrir el archivo de Power BI:
+Alternatively, open `nyc_taxi_analysis_2024.ipynb` in Jupyter or VS Code. The recorded execution used an in-process kernel because the original execution environment blocked normal Jupyter startup.
 
-```text
-dashboard/nyc_taxi_dashboard_2024.pbix
+For the independent raw-source SQL check:
+
+```bash
+python -m pip install duckdb==1.5.5
+python scripts/validate_independent.py
 ```
 
-## Estado del proyecto
+For Power BI, open the PBIP, set the **ProjectRoot** Power Query parameter to your checkout's absolute root path, and refresh after running the ETL. Follow the [Power BI setup and checks](powerbi/IMPLEMENTATION.md). The publication copy uses `C:/path/to/nyc-taxi-operational-analysis` as a placeholder.
 
-Proyecto finalizado.
+## Limitations
+
+These are completed yellow taxi trips, not unmet demand or all NYC mobility. Vehicle availability and operating costs are absent, so the analysis cannot recommend profitable driver allocation. Recorded amounts are not profit; cash tips are unrecorded and airport fees can be missing. Weather is descriptive context from one station. One year of observational data does not establish causality or a recurring seasonal rule.

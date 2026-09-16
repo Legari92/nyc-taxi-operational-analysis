@@ -1,0 +1,17 @@
+{
+  "tested_at_utc": "2026-09-16T10:04:17.4790818Z",
+  "method": "Targeted refresh through Microsoft Tabular Object Model against the open Desktop model",
+  "table": "DimHora",
+  "before": "NoData",
+  "after": "Ready",
+  "refreshed_time": "2026-09-16T10:03:43.1900000",
+  "fact_partition_refreshed_time": "2026-09-07T14:28:38.6466670",
+  "scope": "Refreshed translated hour dimension; fact table, measures and source files unchanged",
+  "save_to_desktop_project": "verified by updated PBIP and cache files after Desktop Save",
+  "cache_saved_at_utc": "2026-09-16T10:07:25.987493+00:00",
+  "cache_bytes": 65596892,
+  "cache_sha256": "e0cd28619ffee10f446b68b69281b46a0f8b3f5e0dce4e43deee9a0aee0871d9",
+  "report_definitions_after_save": "All report JSON definitions are semantically identical to the translated source draft",
+  "english_pdf": "passed: genuine September 16 12:17 Desktop export, all four pages visually reviewed",
+  "english_pdf_sha256": "1aa7772abce438ad4550f702c6b8a107b1a6b454396b28576d1b10711f8a9485"
+}

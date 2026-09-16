@@ -1,0 +1,26 @@
+// Additional measures in _Medidas. Window definitions use Monday = 0.
+
+Mean amount - non-airport =
+CALCULATE([Importe medio por trayecto], KEEPFILTERS('taxi_analysis_2024'[airport_pickup] = 0))
+
+Trips - weekday mornings =
+CALCULATE([Trayectos totales], KEEPFILTERS(FILTER('DimHora', 'DimHora'[pickup_dayofweek] <= 4 && 'DimHora'[pickup_hour_num] >= 7 && 'DimHora'[pickup_hour_num] < 10)))
+
+Trips - weekend nights =
+CALCULATE([Trayectos totales], KEEPFILTERS(FILTER('DimHora', ('DimHora'[pickup_dayofweek] IN {4,5} && 'DimHora'[pickup_hour_num] >= 20) || ('DimHora'[pickup_dayofweek] IN {5,6} && 'DimHora'[pickup_hour_num] < 3))))
+
+Share - weekday mornings =
+DIVIDE([Trips - weekday mornings], CALCULATE([Trips - weekday mornings], REMOVEFILTERS('taxi_analysis_2024'[pickup_zone])))
+
+Share - weekend nights =
+DIVIDE([Trips - weekend nights], CALCULATE([Trips - weekend nights], REMOVEFILTERS('taxi_analysis_2024'[pickup_zone])))
+
+Trips per hour - common weekday mix =
+VAR SelectedDays = VALUES('DimHora'[pickup_dayofweek])
+VAR ReferenceHours = CALCULATE([Horas del periodo], REMOVEFILTERS('DimHora'), TREATAS(SelectedDays, 'DimHora'[pickup_dayofweek]))
+RETURN SUMX(SelectedDays,
+    VAR DayNumber = 'DimHora'[pickup_dayofweek]
+    VAR DayRate = CALCULATE([Trayectos medios por hora])
+    VAR AnnualDayHours = CALCULATE([Horas del periodo], REMOVEFILTERS('DimHora'), TREATAS({DayNumber}, 'DimHora'[pickup_dayofweek]))
+    RETURN DayRate * DIVIDE(AnnualDayHours, ReferenceHours)
+)

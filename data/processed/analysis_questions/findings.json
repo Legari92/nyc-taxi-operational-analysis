@@ -1,0 +1,23 @@
+{
+  "source_sha256": {
+    "taxi_analysis_2024_final.csv": "260d8fefd87284109de52438a76a4d885824cd56c2809e7fe41992622f7e91b1",
+    "dim_hour_2024.csv": "cd9a83c838686b308f41796d142e0a42033e544e4725ee1bf5433f19423806e5"
+  },
+  "total_trips": 39677878,
+  "queens_all_mean_usd": 73.15638599707198,
+  "queens_non_airport_mean_usd": 49.984175232710314,
+  "queens_airport_trip_share": 0.858670534110664,
+  "manhattan_mean_usd": 23.92657093834101,
+  "queens_manhattan_gap_reduction_fraction": 0.47069465397579313,
+  "october_observed_trips_per_hour": 4945.659946236559,
+  "october_standardized_trips_per_hour": 4926.860934653916,
+  "october_standardized_rank": 1,
+  "october_vs_september_standardized_fraction": 0.010944724267134553,
+  "top_10_zone_overlap": [
+    "Lincoln Square East"
+  ],
+  "window_definitions": {
+    "Weekday mornings": "Mon-Fri 07:00-09:59",
+    "Weekend nights": "Friday and Saturday 20:00-02:59 the following day"
+  }
+}

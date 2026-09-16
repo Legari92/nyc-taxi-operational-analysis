@@ -1,0 +1,802 @@
+{
+  "tested_at_utc": "2026-09-16T10:04:17.6853242Z",
+  "method": "DAX executed against local Power BI Analysis Services",
+  "port": 60083,
+  "database": "cd688f3f-5889-4864-9703-315c921a889f",
+  "baseline": {
+    "failures": 0,
+    "results": [
+      {
+        "Scenario": "Airport pickup zones",
+        "Trips": 3130315,
+        "Expected Trips": 3130315,
+        "Recorded total USD": 240962793.90999985,
+        "Expected Recorded total USD": 240962793.91,
+        "Period hours": 8784,
+        "Expected Period hours": 8784,
+        "Trips per hour": 356.3655510018215,
+        "Expected Trips per hour": 356.3655510018215,
+        "Average total USD": 76.97717127828983,
+        "Expected Average total USD": 76.97717127828989,
+        "Airport fee trips": 3026711,
+        "Expected Airport fee trips": 3026711,
+        "Airport pickups": 3130315,
+        "Expected Airport pickups": 3130315,
+        "Pass": true
+      },
+      {
+        "Scenario": "All 2024",
+        "Trips": 39677878,
+        "Expected Trips": 39677878,
+        "Recorded total USD": 1135817146.1799994,
+        "Expected Recorded total USD": 1135817146.18,
+        "Period hours": 8784,
+        "Expected Period hours": 8784,
+        "Trips per hour": 4517.062613843352,
+        "Expected Trips per hour": 4517.062613843352,
+        "Average total USD": 28.62595490061236,
+        "Expected Average total USD": 28.625954900612378,
+        "Airport fee trips": 3163100,
+        "Expected Airport fee trips": 3163100,
+        "Airport pickups": 3130315,
+        "Expected Airport pickups": 3130315,
+        "Pass": true
+      },
+      {
+        "Scenario": "August",
+        "Trips": 2865066,
+        "Expected Trips": 2865066,
+        "Recorded total USD": 83672508.22000012,
+        "Expected Recorded total USD": 83672508.22,
+        "Period hours": 744,
+        "Expected Period hours": 744,
+        "Trips per hour": 3850.8951612903224,
+        "Expected Trips per hour": 3850.8951612903224,
+        "Average total USD": 29.204391179819286,
+        "Expected Average total USD": 29.204391179819243,
+        "Airport fee trips": 273313,
+        "Expected Airport fee trips": 273313,
+        "Airport pickups": 270660,
+        "Expected Airport pickups": 270660,
+        "Pass": true
+      },
+      {
+        "Scenario": "Autumn transition date",
+        "Trips": 117134,
+        "Expected Trips": 117134,
+        "Recorded total USD": 3293021.6100000017,
+        "Expected Recorded total USD": 3293021.61,
+        "Period hours": 25,
+        "Expected Period hours": 25,
+        "Trips per hour": 4685.36,
+        "Expected Trips per hour": 4685.36,
+        "Average total USD": 28.113285724042566,
+        "Expected Average total USD": 28.113285724042544,
+        "Airport fee trips": 9399,
+        "Expected Airport fee trips": 9399,
+        "Airport pickups": 9257,
+        "Expected Airport pickups": 9257,
+        "Pass": true
+      },
+      {
+        "Scenario": "Hour 01 all year",
+        "Trips": 737682,
+        "Expected Trips": 737682,
+        "Recorded total USD": 19270081.92999998,
+        "Expected Recorded total USD": 19270081.93,
+        "Period hours": 367,
+        "Expected Period hours": 367,
+        "Trips per hour": 2010.032697547684,
+        "Expected Trips per hour": 2010.032697547684,
+        "Average total USD": 26.122478154543533,
+        "Expected Average total USD": 26.122478154543558,
+        "Airport fee trips": 44963,
+        "Expected Airport fee trips": 44963,
+        "Airport pickups": 45987,
+        "Expected Airport pickups": 45987,
+        "Pass": true
+      },
+      {
+        "Scenario": "January",
+        "Trips": 2867575,
+        "Expected Trips": 2867575,
+        "Recorded total USD": 78378845.58000006,
+        "Expected Recorded total USD": 78378845.58,
+        "Period hours": 744,
+        "Expected Period hours": 744,
+        "Trips per hour": 3854.2674731182797,
+        "Expected Trips per hour": 3854.2674731182797,
+        "Average total USD": 27.332797077670175,
+        "Expected Average total USD": 27.332797077670158,
+        "Airport fee trips": 229297,
+        "Expected Airport fee trips": 229297,
+        "Airport pickups": 225925,
+        "Expected Airport pickups": 225925,
+        "Pass": true
+      },
+      {
+        "Scenario": "Newark zone incl zero hours",
+        "Trips": 1238,
+        "Expected Trips": 1238,
+        "Recorded total USD": 116723.44,
+        "Expected Recorded total USD": 116723.44,
+        "Period hours": 8784,
+        "Expected Period hours": 8784,
+        "Trips per hour": 0.14093806921675775,
+        "Expected Trips per hour": 0.14093806921675775,
+        "Average total USD": 94.28387722132472,
+        "Expected Average total USD": 94.28387722132472,
+        "Airport fee trips": 1,
+        "Expected Airport fee trips": 1,
+        "Airport pickups": 1238,
+        "Expected Airport pickups": 1238,
+        "Pass": true
+      },
+      {
+        "Scenario": "Positive airport fee",
+        "Trips": 3163100,
+        "Expected Trips": 3163100,
+        "Recorded total USD": 241694649.79999986,
+        "Expected Recorded total USD": 241694649.8,
+        "Period hours": 8784,
+        "Expected Period hours": 8784,
+        "Trips per hour": 360.0979052823315,
+        "Expected Trips per hour": 360.0979052823315,
+        "Average total USD": 76.41068881793173,
+        "Expected Average total USD": 76.41068881793177,
+        "Airport fee trips": 3163100,
+        "Expected Airport fee trips": 3163100,
+        "Airport pickups": 3026711,
+        "Expected Airport pickups": 3026711,
+        "Pass": true
+      },
+      {
+        "Scenario": "Queens",
+        "Trips": 3644095,
+        "Expected Trips": 3644095,
+        "Recorded total USD": 266588820.43000016,
+        "Expected Recorded total USD": 266588820.43,
+        "Period hours": 8784,
+        "Expected Period hours": 8784,
+        "Trips per hour": 414.8559881602914,
+        "Expected Trips per hour": 414.8559881602914,
+        "Average total USD": 73.15638599707202,
+        "Expected Average total USD": 73.15638599707198,
+        "Airport fee trips": 3157611,
+        "Expected Airport fee trips": 3157611,
+        "Airport pickups": 3129077,
+        "Expected Airport pickups": 3129077,
+        "Pass": true
+      },
+      {
+        "Scenario": "Queens August",
+        "Trips": 314917,
+        "Expected Trips": 314917,
+        "Recorded total USD": 22817261.379999973,
+        "Expected Recorded total USD": 22817261.38,
+        "Period hours": 744,
+        "Expected Period hours": 744,
+        "Trips per hour": 423.2755376344086,
+        "Expected Trips per hour": 423.2755376344086,
+        "Average total USD": 72.4548416884448,
+        "Expected Average total USD": 72.45484168844487,
+        "Airport fee trips": 272855,
+        "Expected Airport fee trips": 272855,
+        "Airport pickups": 270527,
+        "Expected Airport pickups": 270527,
+        "Pass": true
+      },
+      {
+        "Scenario": "Spring transition date",
+        "Trips": 98121,
+        "Expected Trips": 98121,
+        "Recorded total USD": 2772257.8599999994,
+        "Expected Recorded total USD": 2772257.86,
+        "Period hours": 23,
+        "Expected Period hours": 23,
+        "Trips per hour": 4266.130434782609,
+        "Expected Trips per hour": 4266.130434782609,
+        "Average total USD": 28.25346113472141,
+        "Expected Average total USD": 28.253461134721412,
+        "Airport fee trips": 9968,
+        "Expected Airport fee trips": 9968,
+        "Airport pickups": 9822,
+        "Expected Airport pickups": 9822,
+        "Pass": true
+      },
+      {
+        "Scenario": "Unknown precipitation",
+        "Trips": 313245,
+        "Expected Trips": 313245,
+        "Recorded total USD": 9320603.939999986,
+        "Expected Recorded total USD": 9320603.94,
+        "Period hours": 82,
+        "Expected Period hours": 82,
+        "Trips per hour": 3820.060975609756,
+        "Expected Trips per hour": 3820.060975609756,
+        "Average total USD": 29.754996695876986,
+        "Expected Average total USD": 29.75499669587703,
+        "Airport fee trips": 28150,
+        "Expected Airport fee trips": 28150,
+        "Airport pickups": 27941,
+        "Expected Airport pickups": 27941,
+        "Pass": true
+      }
+    ],
+    "checks": 12
+  },
+  "analytical": {
+    "failures": 0,
+    "results": [
+      {
+        "Check": "August Queens filter",
+        "Actual": 314917.0,
+        "Expected": 314917.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Bronx airport share",
+        "Actual": 0.0,
+        "Expected": 0.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Bronx all mean",
+        "Actual": 35.78953938978128,
+        "Expected": 35.7895393898,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Bronx non-airport mean",
+        "Actual": 35.78953938978127,
+        "Expected": 35.7895393898,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Brooklyn airport share",
+        "Actual": 0.0,
+        "Expected": 0.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Brooklyn all mean",
+        "Actual": 31.81424947901806,
+        "Expected": 31.814249479,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Brooklyn non-airport mean",
+        "Actual": 31.814249479018073,
+        "Expected": 31.814249479,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Exclude Friday early morning",
+        "Actual": 0.0,
+        "Expected": 0.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Exclude Sunday 03:00",
+        "Actual": 0.0,
+        "Expected": 0.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Manhattan airport share",
+        "Actual": 0.0,
+        "Expected": 0.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Manhattan all mean",
+        "Actual": 23.92657093834099,
+        "Expected": 23.9265709383,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Manhattan non-airport mean",
+        "Actual": 23.926570938340973,
+        "Expected": 23.9265709383,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Month 1 common mix",
+        "Actual": 3871.7020264116572,
+        "Expected": 3871.7020264117,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Month 1 observed",
+        "Actual": 3854.2674731182797,
+        "Expected": 3854.2674731183,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Month 10 common mix",
+        "Actual": 4926.860934653916,
+        "Expected": 4926.8609346539,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Month 10 observed",
+        "Actual": 4945.659946236559,
+        "Expected": 4945.6599462366,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Month 11 common mix",
+        "Actual": 4837.549111963176,
+        "Expected": 4837.5491119632,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Month 11 observed",
+        "Actual": 4864.9389736477115,
+        "Expected": 4864.9389736477,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Month 12 common mix",
+        "Actual": 4769.849726775957,
+        "Expected": 4769.849726776,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Month 12 observed",
+        "Actual": 4726.2755376344085,
+        "Expected": 4726.2755376344,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Month 2 common mix",
+        "Actual": 4142.074880464481,
+        "Expected": 4142.0748804645,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Month 2 observed",
+        "Actual": 4165.869252873563,
+        "Expected": 4165.8692528736,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Month 3 common mix",
+        "Actual": 4623.751267440036,
+        "Expected": 4623.75126744,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Month 3 observed",
+        "Actual": 4626.662180349933,
+        "Expected": 4626.6621803499,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Month 4 common mix",
+        "Actual": 4769.357695810564,
+        "Expected": 4769.3576958106,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Month 4 observed",
+        "Actual": 4738.530555555555,
+        "Expected": 4738.5305555556,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Month 5 common mix",
+        "Actual": 4818.666114526412,
+        "Expected": 4818.6661145264,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Month 5 observed",
+        "Actual": 4857.434139784947,
+        "Expected": 4857.4341397849,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Month 6 common mix",
+        "Actual": 4775.377470400728,
+        "Expected": 4775.3774704007,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Month 6 observed",
+        "Actual": 4757.947222222222,
+        "Expected": 4757.9472222222,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Month 7 common mix",
+        "Actual": 3976.04633424408,
+        "Expected": 3976.0463342441,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Month 7 observed",
+        "Actual": 3994.1223118279568,
+        "Expected": 3994.122311828,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Month 8 common mix",
+        "Actual": 3837.02889913479,
+        "Expected": 3837.0288991348,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Month 8 observed",
+        "Actual": 3850.8951612903224,
+        "Expected": 3850.8951612903,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Month 9 common mix",
+        "Actual": 4873.521584699452,
+        "Expected": 4873.5215846995,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Month 9 observed",
+        "Actual": 4835.581944444444,
+        "Expected": 4835.5819444444,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Morning total",
+        "Actual": 3578390.0,
+        "Expected": 3578390.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Night total",
+        "Actual": 4107220.0,
+        "Expected": 4107220.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Queens airport share",
+        "Actual": 0.858670534110664,
+        "Expected": 0.8586705341,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Queens all mean",
+        "Actual": 73.15638599707175,
+        "Expected": 73.1563859971,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "Queens non-airport mean",
+        "Actual": 49.984175232710236,
+        "Expected": 49.9841752327,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekday mornings Lenox Hill East share",
+        "Actual": 0.03029714480534542,
+        "Expected": 0.0302971448,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekday mornings Lenox Hill East trips",
+        "Actual": 108415.0,
+        "Expected": 108415.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekday mornings Lincoln Square East share",
+        "Actual": 0.030387688317930688,
+        "Expected": 0.0303876883,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekday mornings Lincoln Square East trips",
+        "Actual": 108739.0,
+        "Expected": 108739.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekday mornings Midtown East share",
+        "Actual": 0.03715944880239437,
+        "Expected": 0.0371594488,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekday mornings Midtown East trips",
+        "Actual": 132971.0,
+        "Expected": 132971.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekday mornings Murray Hill share",
+        "Actual": 0.030231752268478282,
+        "Expected": 0.0302317523,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekday mornings Murray Hill trips",
+        "Actual": 108181.0,
+        "Expected": 108181.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekday mornings Penn Station/Madison Sq West share",
+        "Actual": 0.0462914886303617,
+        "Expected": 0.0462914886,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekday mornings Penn Station/Madison Sq West trips",
+        "Actual": 165649.0,
+        "Expected": 165649.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekday mornings Upper East Side North share",
+        "Actual": 0.06659251786417915,
+        "Expected": 0.0665925179,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekday mornings Upper East Side North trips",
+        "Actual": 238294.0,
+        "Expected": 238294.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekday mornings Upper East Side South share",
+        "Actual": 0.049778252230751815,
+        "Expected": 0.0497782522,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekday mornings Upper East Side South trips",
+        "Actual": 178126.0,
+        "Expected": 178126.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekday mornings Upper West Side North share",
+        "Actual": 0.03155189903839436,
+        "Expected": 0.031551899,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekday mornings Upper West Side North trips",
+        "Actual": 112905.0,
+        "Expected": 112905.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekday mornings Upper West Side South share",
+        "Actual": 0.03505375322421536,
+        "Expected": 0.0350537532,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekday mornings Upper West Side South trips",
+        "Actual": 125436.0,
+        "Expected": 125436.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekday mornings Yorkville East share",
+        "Actual": 0.031549942851394064,
+        "Expected": 0.0315499429,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekday mornings Yorkville East trips",
+        "Actual": 112898.0,
+        "Expected": 112898.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekend nights Clinton East share",
+        "Actual": 0.03677158759452866,
+        "Expected": 0.0367715876,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekend nights Clinton East trips",
+        "Actual": 151029.0,
+        "Expected": 151029.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekend nights East Village share",
+        "Actual": 0.0670202716192461,
+        "Expected": 0.0670202716,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekend nights East Village trips",
+        "Actual": 275267.0,
+        "Expected": 275267.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekend nights Greenwich Village South share",
+        "Actual": 0.04323630095295601,
+        "Expected": 0.043236301,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekend nights Greenwich Village South trips",
+        "Actual": 177581.0,
+        "Expected": 177581.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekend nights JFK Airport share",
+        "Actual": 0.03962631658396677,
+        "Expected": 0.0396263166,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekend nights JFK Airport trips",
+        "Actual": 162754.0,
+        "Expected": 162754.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekend nights Lincoln Square East share",
+        "Actual": 0.032084962578094185,
+        "Expected": 0.0320849626,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekend nights Lincoln Square East trips",
+        "Actual": 131780.0,
+        "Expected": 131780.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekend nights Lower East Side share",
+        "Actual": 0.038562336568287066,
+        "Expected": 0.0385623366,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekend nights Lower East Side trips",
+        "Actual": 158384.0,
+        "Expected": 158384.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekend nights Midtown Center share",
+        "Actual": 0.027895023884768774,
+        "Expected": 0.0278950239,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekend nights Midtown Center trips",
+        "Actual": 114571.0,
+        "Expected": 114571.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekend nights Times Sq/Theatre District share",
+        "Actual": 0.03403250860679486,
+        "Expected": 0.0340325086,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekend nights Times Sq/Theatre District trips",
+        "Actual": 139779.0,
+        "Expected": 139779.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekend nights Union Sq share",
+        "Actual": 0.0303246478153106,
+        "Expected": 0.0303246478,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekend nights Union Sq trips",
+        "Actual": 124550.0,
+        "Expected": 124550.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekend nights West Village share",
+        "Actual": 0.06101596700444583,
+        "Expected": 0.061015967,
+        "Tolerance": 1E-06,
+        "Pass": true
+      },
+      {
+        "Check": "weekend nights West Village trips",
+        "Actual": 250606.0,
+        "Expected": 250606.0,
+        "Tolerance": 1E-06,
+        "Pass": true
+      }
+    ],
+    "checks": 81
+  },
+  "status": "passed"
+}

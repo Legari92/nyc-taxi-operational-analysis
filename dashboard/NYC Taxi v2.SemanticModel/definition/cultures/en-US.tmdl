@@ -1,0 +1,6220 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "taxi_analysis_2024": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "taxi analysis 2024": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "taxi_analysis_2024": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "analysis 2024": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.pickup_hour": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "pickup_hour"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pickup hour": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pickup_hour": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "pickup period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "pickup era": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "pickup epoch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "pickup age": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "taxi_analysis_2024.pickup_hour.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "VariationSource": "pickup_hour",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pickup hour date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "hour date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "taxi_analysis_2024.pickup_hour.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "VariationSource": "pickup_hour",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pickup hour year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hour year": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "pickup hour yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hour yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "taxi_analysis_2024.pickup_hour.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "VariationSource": "pickup_hour",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pickup hour quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hour quarter": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "pickup hour qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "hour qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "taxi_analysis_2024.pickup_hour.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "VariationSource": "pickup_hour",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pickup hour month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hour month": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "pickup hour mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hour mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "taxi_analysis_2024.pickup_hour.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "VariationSource": "pickup_hour",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pickup hour day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hour day": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "taxi_analysis_2024.PU_location_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "PULocationID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "PU location ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PULocationID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "location": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "PU location": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "location ID": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "pu location identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "pu location identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "pu location identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "pu locality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "pu placement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "pu scene": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "pu venue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "location identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "location identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "location identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.trip_count": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "trip_count"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trip count": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "trip_count": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "trip amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.total_revenue": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "total_revenue"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total revenue": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "total_revenue": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "revenue": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "total income": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "income": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "total profit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "total turnover": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "total yield": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "profit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "turnover": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "yield": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "aggregate revenue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall revenue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.avg_total_amount": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "avg_total_amount"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "avg total amount": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "avg_total_amount": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "average total amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "avg aggregate amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "avg overall amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "avg total quantity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg total volume": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg total expanse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg total extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg total sum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "avg total total": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "avg total aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.avg_fare_amount": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "avg_fare_amount"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "avg fare amount": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "avg_fare_amount": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "average fare amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "avg fare quantity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg fare volume": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg fare expanse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg fare extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg fare sum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "avg fare total": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "avg fare aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.avg_tip_amount": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "avg_tip_amount"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "avg tip amount": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "avg_tip_amount": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "average tip amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "avg tip quantity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg tip volume": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg tip expanse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg tip extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg tip sum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "avg tip total": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "avg tip aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.tip_rate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "tip_rate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tip rate": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tip_rate": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "rate": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "tip degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "tip frequency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "tip percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "tip ratio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "tip quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "frequency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "ratio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "tip amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.avg_trip_distance": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "avg_trip_distance"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "avg trip distance": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "avg_trip_distance": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "average trip distance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "avg trip coldness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg trip aloofness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg trip detachment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg trip remoteness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg trip reserve": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "avg trip expanse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "avg trip vastness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "avg trip space": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "avg trip void": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.avg_trip_duration_min": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "avg_trip_duration_min"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "avg trip duration min": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "avg_trip_duration_min": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "avg trip duration minimum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "average trip duration min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.airport_trip_share": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "airport_trip_share"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "airport trip share": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "airport_trip_share": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "share": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "trip share": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "airport trip part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "airport trip portion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "airport trip segment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "airport trip cut": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "airport trip stake": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "airport trip bit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "airport trip piece": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "trip part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "trip portion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "trip segment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.cash_trip_share": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "cash_trip_share"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cash trip share": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cash_trip_share": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "share": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "trip share": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cash trip part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "cash trip portion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "cash trip segment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "cash trip cut": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "cash trip stake": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "cash trip bit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "cash trip piece": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "trip part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "trip portion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "trip segment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.card_trip_share": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "card_trip_share"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "card trip share": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "card_trip_share": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "share": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "trip share": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "card trip part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "card trip portion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "card trip segment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "card trip cut": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "card trip stake": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "card trip bit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "card trip piece": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "trip part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "trip portion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "trip segment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.flex_fare_share": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "flex_fare_share"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "flex fare share": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "flex_fare_share": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "share": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "fare share": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "flex fare part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "flex fare portion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "flex fare segment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "flex fare cut": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "flex fare stake": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "flex fare bit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "flex fare piece": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "fare part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "fare portion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "fare segment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.pickup_month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "pickup_month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pickup month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pickup_month": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "pickup mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.pickup_dayofweek": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "pickup_dayofweek"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pickup dayofweek": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pickup_dayofweek": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.pickup_hour_num": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "pickup_hour_num"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pickup hour num": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pickup_hour_num": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "pickup hour number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.is_weekend": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "is_weekend"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "is weekend": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "is_weekend": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "weekend": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.temp_c": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "temp_c"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "temp c": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "temp_c": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "c": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.rain_mm": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "rain_mm"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rain mm": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "rain_mm": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "mm": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.rain_flag": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "rain_flag"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rain flag": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "rain_flag": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "flag": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "rain ensign": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "rain pennant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "rain pennon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "rain emblem": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "rain streamer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "ensign": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pennant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pennon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "emblem": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "streamer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.moderate_rain_flag": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "moderate_rain_flag"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "moderate rain flag": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moderate_rain_flag": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "flag": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "moderate rain ensign": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "moderate rain pennant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "moderate rain pennon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "moderate rain emblem": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "moderate rain streamer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "moderate rain standard": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "moderate rain bunting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "moderate rain banner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "ensign": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pennant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.heavy_rain_flag": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "heavy_rain_flag"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "heavy rain flag": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "heavy_rain_flag": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "flag": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "heavy rain ensign": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "heavy rain pennant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "heavy rain pennon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "heavy rain emblem": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "heavy rain streamer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "heavy rain standard": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "heavy rain bunting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "heavy rain banner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "ensign": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pennant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.visibility": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "visibility"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "visibility": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "discernibility": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "perceptibility": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "conspicuousness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "distinguishability": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reflectiveness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reflectivity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "brightness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "luminosity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "horizon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.wind_speed": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "wind_speed"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "wind speed": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "wind_speed": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "speed": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "wind rapidity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "wind swiftness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "wind speediness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "wind quickness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "wind promptness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "rapidity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "swiftness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "speediness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "quickness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "promptness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.is_dark": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "is_dark"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "is dark": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "is_dark": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dark": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dim": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "black": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "obscure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "opaque": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "brunet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "brunette": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "brown": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "chestnut": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "sable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.pickup_borough": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "pickup_borough"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pickup borough": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pickup_borough": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "borough": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "pickup region": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "pickup municipality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "pickup constituency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "pickup division": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "pickup township": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "region": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "municipality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "constituency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "division": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "township": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.pickup_zone": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "pickup_zone"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pickup zone": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pickup_zone": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "zone": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "pickup region": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "pickup precinct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "region": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "precinct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pickup district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "pickup sector": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "pickup neighborhood": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "pickup area": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "sector": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.pickup_service_zone": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "pickup_service_zone"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pickup service zone": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pickup_service_zone": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "zone": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "service zone": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "pickup maintenance zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "pickup examination zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "pickup svc zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "maintenance zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "examination zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "svc zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "pickup package zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "pickup repair zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "pickup benefit zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "pickup servicing zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.pickup_weekday_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "pickup_weekday_name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pickup weekday name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pickup_weekday_name": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "weekday": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "pickup weekday": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "weekday name": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "pickup weekday nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "pickup weekday title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "pickup weekday label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "pickup weekday tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "weekday nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "weekday title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "weekday label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "weekday tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "ordinary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "standard": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.hour_segment": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "hour_segment"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hour segment": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hour_segment": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "segment": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "hour division": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "hour subdivision": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "division": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "subdivision": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "hour section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "hour sector": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "hour bit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "hour fragment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "hour part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "hour piece": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.pickup_borough_clean": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "pickup_borough_clean"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pickup borough clean": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pickup_borough_clean": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "pickup region clean": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "pickup municipality clean": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "pickup constituency clean": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "pickup division clean": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "pickup township clean": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "pickup area clean": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "pickup district clean": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.pickup_borough_grouped": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "pickup_borough_grouped"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pickup borough grouped": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pickup_borough_grouped": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "pickup region grouped": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "pickup municipality grouped": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "pickup constituency grouped": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "pickup division grouped": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "pickup township grouped": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "pickup area grouped": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "pickup district grouped": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "Pickup group": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.low_visibility_flag": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "low_visibility_flag"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "low visibility flag": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "low_visibility_flag": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "flag": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "visibility flag": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "low visibility ensign": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "low visibility pennant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "low visibility pennon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "low visibility emblem": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "low visibility streamer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "visibility ensign": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "visibility pennant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "visibility pennon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "visibility emblem": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "visibility streamer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.temp_bin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "temp_bin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "temp bin": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "temp_bin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "bin": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "temp basket": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "temp container": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "temp holder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "basket": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "container": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "holder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "temp box": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "temp silo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "temp tub": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "temp case": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.measure": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Measures"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "measure": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "quota": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "portion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "ration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "size": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.trayectos_totales": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Trayectos totales"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trayectos totales": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Total trips": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.ingresos_totales": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Ingresos totales"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ingresos totales": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Recorded amount (USD)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.importe_medio_por_trayecto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Importe medio por trayecto"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "importe medio por trayecto": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Mean amount per trip": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "All pickups": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.duración_media_ponderada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Duración media ponderada (min)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "duración media ponderada": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "duración media ponderada (min)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Mean duration (min)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "Units": [
+			        "minute",
+			        "min"
+			      ]
+			    },
+			    "entity__medida.proporción_de_viajes_aeroportuarios": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Proporción de viajes aeroportuarios"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "proporción de viajes aeroportuarios": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "With recorded airport fee": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.trayectos_medios_por_hora": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Trayectos medios por hora"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trayectos medios por hora": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Trips per real hour": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Observed": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.distancia_media_ponderada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Distancia media ponderada"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "distancia media ponderada": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Mean distance (miles)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.tarifa_media_ponderada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Tarifa media ponderada"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tarifa media ponderada": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.importe_medio_filtrado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Importe medio filtrado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "importe medio filtrado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.segmento_aeroportuario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "Segmento aeroportuario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "segmento aeroportuario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Recorded airport fee": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.franja_horaria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "Franja horaria"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "franja horaria": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024.tipo_de_recogida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "taxi_analysis_2024",
+			          "ConceptualProperty": "Tipo de recogida"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Pickup type": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dimhora.pickup_month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimHora",
+			          "ConceptualProperty": "pickup_month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Month": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dimhora.pickup_hour_num": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimHora",
+			          "ConceptualProperty": "pickup_hour_num"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Hour of day": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dimhora.pickup_weekday_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimHora",
+			          "ConceptualProperty": "pickup_weekday_name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Weekday": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dimhora.hour_segment": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimHora",
+			          "ConceptualProperty": "hour_segment"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "table_medidas.trips_per_hour__common_weekday_mix": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Trips per hour - common weekday mix"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Common weekday mix": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_medidas.share__weekend_nights": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Share - weekend nights"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Share of trips in the window": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_medidas.trips__weekend_nights": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Trips - weekend nights"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Trips in the window": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_medidas.share__weekday_mornings": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Share - weekday mornings"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Share of trips in the window": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_medidas.trips__weekday_mornings": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Trips - weekday mornings"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Trips in the window": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_medidas.mean_amount__nonairport": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Mean amount - non-airport"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Airport pickups excluded": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dimhora.contexto_de_luz": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimHora",
+			          "ConceptualProperty": "Contexto de luz"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Light conditions": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "taxi_analysis_2024_pickup_hour_date_hierarchy_has_taxi_analysis_2024_pickup_hour_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024.pickup_hour.date_hierarchy": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.pickup_hour.date_hierarchy"
+			          }
+			        },
+			        "taxi_analysis_2024.pickup_hour.quarter": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.pickup_hour.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024.pickup_hour.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.pickup_hour.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pickup_hour_date_hierarchies_have_pickup_hour_quarters"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_pickup_hour_date_hierarchy_has_taxi_analysis_2024_pickup_hour_year": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024.pickup_hour.date_hierarchy": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.pickup_hour.date_hierarchy"
+			          }
+			        },
+			        "taxi_analysis_2024.pickup_hour.year": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.pickup_hour.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024.pickup_hour.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.pickup_hour.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pickup_hour_date_hierarchies_have_pickup_hour_years"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_pickup_hour_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024.pickup_hour": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.pickup_hour"
+			          }
+			        },
+			        "taxi_analysis_2024.pickup_hour.date_hierarchy": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.pickup_hour.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024.pickup_hour"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.pickup_hour.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pickup_hours_have_pickup_hour_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_franja_horaria": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.franja_horaria": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.franja_horaria"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.franja_horaria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_franja_horarias"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_segmento_aeroportuario": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.segmento_aeroportuario": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.segmento_aeroportuario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.segmento_aeroportuario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_segmento_aeroportuarios"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_entity__medida_importe_medio_filtrado": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "entity__medida.importe_medio_filtrado": {
+			          "Target": {
+			            "Entity": "entity__medida.importe_medio_filtrado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.importe_medio_filtrado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_importe_medio_filtrado"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_entity__medida_tarifa_media_ponderada": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "entity__medida.tarifa_media_ponderada": {
+			          "Target": {
+			            "Entity": "entity__medida.tarifa_media_ponderada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.tarifa_media_ponderada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_tarifa_media_ponderada"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_entity__medida_distancia_media_ponderada": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "entity__medida.distancia_media_ponderada": {
+			          "Target": {
+			            "Entity": "entity__medida.distancia_media_ponderada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.distancia_media_ponderada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_distancia_media_ponderada"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_entity__medida_trayectos_medios_por_hora": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "entity__medida.trayectos_medios_por_hora": {
+			          "Target": {
+			            "Entity": "entity__medida.trayectos_medios_por_hora"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.trayectos_medios_por_hora"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_trayectos_medios_por_hora"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_entity__medida_proporción_de_viajes_aeroportuarios": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "entity__medida.proporción_de_viajes_aeroportuarios": {
+			          "Target": {
+			            "Entity": "entity__medida.proporción_de_viajes_aeroportuarios"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.proporción_de_viajes_aeroportuarios"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_proporción_de_viajes_aeroportuarios"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_entity__medida_duración_media_ponderada": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "entity__medida.duración_media_ponderada": {
+			          "Target": {
+			            "Entity": "entity__medida.duración_media_ponderada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.duración_media_ponderada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_duración_media_ponderada"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_entity__medida_importe_medio_por_trayecto": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "entity__medida.importe_medio_por_trayecto": {
+			          "Target": {
+			            "Entity": "entity__medida.importe_medio_por_trayecto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.importe_medio_por_trayecto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_importe_medio_por_trayecto"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_entity__medida_ingresos_totales": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "entity__medida.ingresos_totales": {
+			          "Target": {
+			            "Entity": "entity__medida.ingresos_totales"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.ingresos_totales"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_ingresos_totales"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_entity__medida_trayectos_totales": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "entity__medida.trayectos_totales": {
+			          "Target": {
+			            "Entity": "entity__medida.trayectos_totales"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.trayectos_totales"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_trayectos_totales"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_temp_bin": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.temp_bin": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.temp_bin"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.temp_bin"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_temp_bins"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_low_visibility_flag": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.low_visibility_flag": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.low_visibility_flag"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.low_visibility_flag"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_low_visibility_flags"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_pickup_borough_grouped": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.pickup_borough_grouped": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.pickup_borough_grouped"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.pickup_borough_grouped"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_pickup_borough_grouped"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_pickup_borough_clean": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.pickup_borough_clean": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.pickup_borough_clean"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.pickup_borough_clean"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_pickup_borough_clean"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_hour_segment": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.hour_segment": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.hour_segment"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.hour_segment"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_hour_segments"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_pickup_weekday_name": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.pickup_weekday_name": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.pickup_weekday_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.pickup_weekday_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_pickup_weekday_names"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_pickup_service_zone": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.pickup_service_zone": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.pickup_service_zone"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.pickup_service_zone"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_pickup_service_zones"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_pickup_zone": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.pickup_zone": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.pickup_zone"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.pickup_zone"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_pickup_zones"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_pickup_borough": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.pickup_borough": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.pickup_borough"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.pickup_borough"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_pickup_boroughs"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_is_dark": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.is_dark": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.is_dark"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.is_dark"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_is_darks"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Adjectives": [
+			              {
+			                "dark": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "taxi_analysis_2024.is_dark"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "is_dark_indicates_how_dark_taxi_analysis_2024_are"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_wind_speed": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.wind_speed": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.wind_speed"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.wind_speed"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_wind_speeds"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_visibility": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.visibility": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.visibility"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.visibility"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_visibilities"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_heavy_rain_flag": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.heavy_rain_flag": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.heavy_rain_flag"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.heavy_rain_flag"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_heavy_rain_flags"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_moderate_rain_flag": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.moderate_rain_flag": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.moderate_rain_flag"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.moderate_rain_flag"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_moderate_rain_flags"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_rain_flag": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.rain_flag": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.rain_flag"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.rain_flag"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_rain_flags"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_rain_mm": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.rain_mm": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.rain_mm"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.rain_mm"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_rain_mms"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_temp_c": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.temp_c": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.temp_c"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.temp_c"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_temp_c"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_is_weekend": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.is_weekend": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.is_weekend"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.is_weekend"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_is_weekends"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Adjectives": [
+			              {
+			                "weekend": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "taxi_analysis_2024.is_weekend"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "is_weekend_indicates_how_weekend_taxi_analysis_2024_are"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_pickup_hour_num": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.pickup_hour_num": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.pickup_hour_num"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.pickup_hour_num"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_pickup_hour_nums"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_pickup_dayofweek": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.pickup_dayofweek": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.pickup_dayofweek"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.pickup_dayofweek"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_pickup_dayofweeks"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_pickup_month": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.pickup_month": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.pickup_month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.pickup_month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_pickup_months"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_flex_fare_share": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.flex_fare_share": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.flex_fare_share"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.flex_fare_share"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_flex_fare_shares"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_card_trip_share": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.card_trip_share": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.card_trip_share"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.card_trip_share"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_card_trip_shares"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_cash_trip_share": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.cash_trip_share": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.cash_trip_share"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.cash_trip_share"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_cash_trip_shares"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_airport_trip_share": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.airport_trip_share": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.airport_trip_share"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.airport_trip_share"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_airport_trip_shares"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_avg_trip_duration_min": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.avg_trip_duration_min": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.avg_trip_duration_min"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.avg_trip_duration_min"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_avg_trip_duration_mins"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_avg_trip_distance": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.avg_trip_distance": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.avg_trip_distance"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.avg_trip_distance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_avg_trip_distances"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_tip_rate": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.tip_rate": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.tip_rate"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.tip_rate"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_tip_rates"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_avg_tip_amount": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.avg_tip_amount": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.avg_tip_amount"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.avg_tip_amount"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_avg_tip_amounts"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_avg_fare_amount": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.avg_fare_amount": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.avg_fare_amount"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.avg_fare_amount"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_avg_fare_amounts"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_avg_total_amount": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.avg_total_amount": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.avg_total_amount"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.avg_total_amount"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_avg_total_amounts"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_total_revenue": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.total_revenue": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.total_revenue"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.total_revenue"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_total_revenues"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_trip_count": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.trip_count": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.trip_count"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.trip_count"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_trip_counts"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_PU_location_ID": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.PU_location_ID": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.PU_location_ID"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.PU_location_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_PU_location_ID"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_has_pickup_hour": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024"
+			          }
+			        },
+			        "taxi_analysis_2024.pickup_hour": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.pickup_hour"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.pickup_hour"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "taxi_analysis_2024_have_pickup_hours"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_pickup_hour_date_hierarchy_has_taxi_analysis_2024_pickup_hour_month": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024.pickup_hour.date_hierarchy": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.pickup_hour.date_hierarchy"
+			          }
+			        },
+			        "taxi_analysis_2024.pickup_hour.month": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.pickup_hour.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024.pickup_hour.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.pickup_hour.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pickup_hour_date_hierarchies_have_pickup_hour_months"
+			        }
+			      ]
+			    },
+			    "taxi_analysis_2024_pickup_hour_date_hierarchy_has_taxi_analysis_2024_pickup_hour_day": {
+			      "Binding": {
+			        "ConceptualEntity": "taxi_analysis_2024"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "taxi_analysis_2024.pickup_hour.date_hierarchy": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.pickup_hour.date_hierarchy"
+			          }
+			        },
+			        "taxi_analysis_2024.pickup_hour.day": {
+			          "Target": {
+			            "Entity": "taxi_analysis_2024.pickup_hour.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "taxi_analysis_2024.pickup_hour.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "taxi_analysis_2024.pickup_hour.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pickup_hour_date_hierarchies_have_pickup_hour_days"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

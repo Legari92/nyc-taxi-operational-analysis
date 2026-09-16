@@ -1,0 +1,62 @@
+{
+  "raw_trips": 41169720,
+  "clean_trips": 39677878,
+  "recorded_total_usd": 1135817146.18,
+  "avg_recorded_total_usd": 28.625954900612378,
+  "avg_distance_miles": 3.42134780922508,
+  "avg_recorded_duration_min": 16.91289989852784,
+  "airport_surcharge_trips": 3163100,
+  "airport_pickup_trips": 3130315,
+  "valid_cross_month_trips_retained": 352,
+  "real_hours": 8784,
+  "observed_clock_hours": 8783,
+  "fact_rows": 1049933,
+  "raw_weather_rows": 11608,
+  "routine_reports": 8767,
+  "trace_routine_reports": 434,
+  "unparsed_routine_precipitation": 0,
+  "weather_DATE_corrections": [
+    {
+      "source_DATE": "2024-03-09T21:51:00",
+      "verified_UTC": "2024-03-10T03:51:00Z"
+    },
+    {
+      "source_DATE": "2024-03-09T22:51:00",
+      "verified_UTC": "2024-03-10T04:51:00Z"
+    },
+    {
+      "source_DATE": "2024-03-09T23:51:00",
+      "verified_UTC": "2024-03-10T05:51:00Z"
+    },
+    {
+      "source_DATE": "2024-03-10T00:51:00",
+      "verified_UTC": "2024-03-10T06:51:00Z"
+    },
+    {
+      "source_DATE": "2024-03-10T01:51:00",
+      "verified_UTC": "2024-03-10T07:51:00Z"
+    },
+    {
+      "source_DATE": "2024-11-02T21:51:00",
+      "verified_UTC": "2024-11-03T01:51:00Z"
+    },
+    {
+      "source_DATE": "2024-11-02T22:51:00",
+      "verified_UTC": "2024-11-03T02:51:00Z"
+    },
+    {
+      "source_DATE": "2024-11-02T23:51:00",
+      "verified_UTC": "2024-11-03T03:51:00Z"
+    },
+    {
+      "source_DATE": "2024-11-03T00:51:00",
+      "verified_UTC": "2024-11-03T04:51:00Z"
+    },
+    {
+      "source_DATE": "2024-11-03T01:51:00",
+      "verified_UTC": "2024-11-03T05:51:00Z"
+    }
+  ],
+  "weather_unknown_clock_bins": 81,
+  "maximum_precipitation_mm": 32.5
+}

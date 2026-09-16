@@ -1,0 +1,9 @@
+relationship d39f6201-963b-4cb6-a393-dd28996dfd30
+	joinOnDateBehavior: datePartOnly
+	fromColumn: taxi_analysis_2024.pickup_hour
+	toColumn: LocalDateTable_2d90c325-049f-4167-b7b9-098a2cdf58cb.Date
+
+relationship DimHora_to_taxi_analysis_2024
+	fromColumn: taxi_analysis_2024.pickup_hour
+	toColumn: DimHora.pickup_hour
+

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "68ffa800110a160e0347",
+  "displayName": "Temporal patterns",
+  "displayOption": "FitToPage",
+  "height": 1080,
+  "width": 1920,
+  "objects": {
+    "outspace": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F5F5F5'"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "09df9103a993ad4429ad",
+      "target": "97cd3233e8817ce46eaa",
+      "type": "NoFilter"
+    },
+    {
+      "source": "09df9103a993ad4429ad",
+      "target": "f287acb0001254235e8b",
+      "type": "NoFilter"
+    },
+    {
+      "source": "97cd3233e8817ce46eaa",
+      "target": "09df9103a993ad4429ad",
+      "type": "NoFilter"
+    },
+    {
+      "source": "97cd3233e8817ce46eaa",
+      "target": "f287acb0001254235e8b",
+      "type": "NoFilter"
+    },
+    {
+      "source": "f287acb0001254235e8b",
+      "target": "09df9103a993ad4429ad",
+      "type": "NoFilter"
+    },
+    {
+      "source": "f287acb0001254235e8b",
+      "target": "97cd3233e8817ce46eaa",
+      "type": "NoFilter"
+    }
+  ]
+}

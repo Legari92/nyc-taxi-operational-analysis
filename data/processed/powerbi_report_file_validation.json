@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "pages": 4,
+  "visual_containers": 34,
+  "direct_field_references_checked": 80,
+  "checks": [
+    "JSON parsing",
+    "field references",
+    "calendar references",
+    "page bounds",
+    "interaction targets"
+  ],
+  "errors": [],
+  "visual_rendering": "passed: all four pages of September 16 12:17 English Desktop export; see powerbi_analytical_visual_review.json",
+  "exact_visual_schema": "Microsoft visualContainer 2.12.0 URL returns HTTP 404; no full schema pass claimed"
+}

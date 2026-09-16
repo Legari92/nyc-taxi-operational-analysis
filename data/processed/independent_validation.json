@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "method": "DuckDB aggregate directly from all twelve raw files",
+  "raw_reference": {
+    "clean_trips": 39677878.0,
+    "recorded_total_usd": 1135817146.1783137,
+    "avg_distance_miles": 3.4213478092256637,
+    "avg_recorded_duration_min": 16.912899898528586,
+    "airport_surcharge_trips": 3163100.0,
+    "airport_pickup_trips": 3130315.0
+  }
+}

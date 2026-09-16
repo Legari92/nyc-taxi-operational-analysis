@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-16",
+  "status": "overview_slicer_filter_and_reset_confirmed",
+  "checks": [
+    {
+      "scenario": "Overview: Borough=Queens and Month=8",
+      "expected_trips": 314917,
+      "observed_trips": 314917,
+      "status": "passed",
+      "evidence": "Agent inspected owner-supplied Desktop screenshot showing both selections, KPI and filtered charts",
+      "screenshot": "images/validation/overview_queens_august.png",
+      "screenshot_sha256": "bbbb06e434e851958330da5851e9bbee445d0a5e7dee5a64e6f2e82c2f0864f0"
+    },
+    {
+      "scenario": "Overview: clear both slicers",
+      "expected_trips": 39677878,
+      "status": "passed_owner_reported",
+      "evidence": "Owner confirmed the total returned after clearing Borough and Month; no separate screenshot was supplied"
+    }
+  ],
+  "not_manually_checked": [
+    "Overview chart point selection and clearing",
+    "Geographic page slicer and chart interactions"
+  ],
+  "scope": "Confirms the two Overview slicer scenarios only. It does not claim all report interactions were manually tested."
+}

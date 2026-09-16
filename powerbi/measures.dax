@@ -1,0 +1,52 @@
+// Each definition is a separate measure, preferably in the existing _Medidas table.
+// Keep existing names initially to preserve visual references; update their titles.
+
+Trayectos totales = SUM('taxi_analysis_2024'[trip_count])
+
+Ingresos totales = SUM('taxi_analysis_2024'[total_revenue])
+// Display title: Recorded total amount (USD). This is not profit.
+
+Importe medio por trayecto = DIVIDE([Ingresos totales], [Trayectos totales])
+
+Duración media ponderada (min) =
+DIVIDE(SUM('taxi_analysis_2024'[total_trip_duration_min]), [Trayectos totales])
+
+// Preserve the existing overview card reference while using the corrected measure.
+Duración media ponderada = [Duración media ponderada (min)]
+
+Distancia media ponderada =
+DIVIDE(SUM('taxi_analysis_2024'[total_trip_distance]), [Trayectos totales])
+
+Tarifa media ponderada =
+DIVIDE(SUM('taxi_analysis_2024'[total_fare_amount]), [Trayectos totales])
+
+Trayectos con recargo registrado =
+SUMX('taxi_analysis_2024', 'taxi_analysis_2024'[airport_trip_share] * 'taxi_analysis_2024'[trip_count])
+
+Proporción de viajes aeroportuarios =
+DIVIDE([Trayectos con recargo registrado], [Trayectos totales])
+// Display title: % with a positive recorded airport fee.
+
+Recogidas en aeropuertos =
+SUMX('taxi_analysis_2024', 'taxi_analysis_2024'[airport_pickup] * 'taxi_analysis_2024'[trip_count])
+
+Proporción de recogidas en aeropuertos =
+DIVIDE([Recogidas en aeropuertos], [Trayectos totales])
+
+Airport_fee sin dato = SUM('taxi_analysis_2024'[airport_fee_missing_count])
+
+Horas del periodo = SUM('DimHora'[elapsed_hours])
+
+Trayectos medios por hora =
+DIVIDE(COALESCE([Trayectos totales], 0), [Horas del periodo])
+// REQUIRED: active single-direction DimHora[pickup_hour] 1 -> * fact[pickup_hour].
+// Every time/weather slicer and axis must use DimHora fields. Borough/segment
+// filters remain on fact and must NOT filter the hour dimension backwards.
+// This includes zero-trip hours in a selected zone and counts the DST repeat twice.
+
+Importe medio filtrado =
+IF([Trayectos totales] >= 5000, [Importe medio por trayecto], BLANK())
+
+Proporción con propina registrada =
+DIVIDE(SUM('taxi_analysis_2024'[tipped_trip_count]), [Trayectos totales])
+// Not the monetary tipping percentage. Cash tips are not recorded by TLC.
