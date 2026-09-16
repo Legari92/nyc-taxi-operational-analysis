@@ -47,6 +47,8 @@ The ETL processes one month at a time, records exclusions, and aggregates by pic
 
 ## What changed in this update
 
+This is the **v2 update** of the same project. See the [changelog](CHANGELOG.md) for its changes, validation and original baseline.
+
 This update continues the original NYC Taxi portfolio project with the same 2024 sources and four-page report structure. The original annual total of **39,677,878 trips was already correct** and remains unchanged.
 
 - **Corrected hourly activity:** trips are divided by real calendar hours, replacing an average of aggregated fact-row counts. The calendar retains zero-trip hours and handles daylight-saving changes. Trip averages continue to use weighted sums and counts.
